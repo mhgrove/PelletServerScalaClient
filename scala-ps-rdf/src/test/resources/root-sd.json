@@ -1,0 +1,468 @@
+{
+  "ps-discovery": {
+    "response-mimetype": [
+      "application/rdf+xml",
+      "text/turtle",
+      "text/json",
+      "text/html"
+    ],
+    "endpoint": {
+      "http-methods": ["GET"],
+      "url": "http://ps.clarkparsia.com/"
+    }
+  },
+  "knowledge-bases": [
+    {
+      "name": "wine",
+      "kb-services": {
+        "realize": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/wine/realize"
+          }
+        },
+        "ns-service": {
+          "response-mimetype": [
+            "text/json",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/wine/ns-service"
+          }
+        },
+        "query": {
+          "response-mimetype": [
+            "application/sparql-results+xml",
+            "application/sparql-results+json",
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": [
+              "GET",
+              "POST"
+            ],
+            "url": "http://ps.clarkparsia.com/wine/query{?query,default-graph-uri,named-graph-uri}"
+          }
+        },
+        "consistency": {
+          "response-mimetype": [
+            "application/sparql-results+xml",
+            "application/sparql-results+json",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/wine/consistency"
+          }
+        },
+        "explain-unsat": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/wine/explain/unsat/{class}"
+          }
+        },
+        "explain-instance": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/wine/explain/instance/{instance}/{class}"
+          }
+        },
+        "kb-discovery": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/json",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/wine"
+          }
+        },
+        "classify": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/wine/classify"
+          }
+        },
+        "search": {
+          "response-mimetype": ["text/json"],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/wine/search{?search}"
+          }
+        },
+        "explain-subclass": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/wine/explain/subclass/{sub}/{super}"
+          }
+        },
+        "explain-inconsistent": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/wine/explain/inconsistent"
+          }
+        },
+        "explain": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/wine/explain{?query}"
+          }
+        },
+        "explain-property": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/wine/explain/property/{subject}/{predicate}/{object}"
+          }
+        }
+      }
+    },
+    {
+      "name": "galen",
+      "kb-services": {
+        "realize": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/galen/realize"
+          }
+        },
+        "ns-service": {
+          "response-mimetype": [
+            "text/json",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/galen/ns-service"
+          }
+        },
+        "query": {
+          "response-mimetype": [
+            "application/sparql-results+xml",
+            "application/sparql-results+json",
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": [
+              "GET",
+              "POST"
+            ],
+            "url": "http://ps.clarkparsia.com/galen/query{?query,default-graph-uri,named-graph-uri}"
+          }
+        },
+        "consistency": {
+          "response-mimetype": [
+            "application/sparql-results+xml",
+            "application/sparql-results+json",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/galen/consistency"
+          }
+        },
+        "explain-unsat": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/galen/explain/unsat/{class}"
+          }
+        },
+        "explain-instance": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/galen/explain/instance/{instance}/{class}"
+          }
+        },
+        "kb-discovery": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/json",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/galen"
+          }
+        },
+        "classify": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/galen/classify"
+          }
+        },
+        "search": {
+          "response-mimetype": ["text/json"],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/galen/search{?search}"
+          }
+        },
+        "explain-subclass": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/galen/explain/subclass/{sub}/{super}"
+          }
+        },
+        "explain-inconsistent": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/galen/explain/inconsistent"
+          }
+        },
+        "explain": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/galen/explain{?query}"
+          }
+        },
+        "explain-property": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/galen/explain/property/{subject}/{predicate}/{object}"
+          }
+        }
+      }
+    },
+    {
+      "name": "peoplepets",
+      "kb-services": {
+        "realize": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/peoplepets/realize"
+          }
+        },
+        "ns-service": {
+          "response-mimetype": [
+            "text/json",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/peoplepets/ns-service"
+          }
+        },
+        "query": {
+          "response-mimetype": [
+            "application/sparql-results+xml",
+            "application/sparql-results+json",
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": [
+              "GET",
+              "POST"
+            ],
+            "url": "http://ps.clarkparsia.com/peoplepets/query{?query,default-graph-uri,named-graph-uri}"
+          }
+        },
+        "consistency": {
+          "response-mimetype": [
+            "application/sparql-results+xml",
+            "application/sparql-results+json",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/peoplepets/consistency"
+          }
+        },
+        "explain-unsat": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/peoplepets/explain/unsat/{class}"
+          }
+        },
+        "explain-instance": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/peoplepets/explain/instance/{instance}/{class}"
+          }
+        },
+        "kb-discovery": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/json",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/peoplepets"
+          }
+        },
+        "classify": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/peoplepets/classify"
+          }
+        },
+        "search": {
+          "response-mimetype": ["text/json"],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/peoplepets/search{?search}"
+          }
+        },
+        "explain-subclass": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/peoplepets/explain/subclass/{sub}/{super}"
+          }
+        },
+        "explain-inconsistent": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/peoplepets/explain/inconsistent"
+          }
+        },
+        "explain": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/peoplepets/explain{?query}"
+          }
+        },
+        "explain-property": {
+          "response-mimetype": [
+            "application/rdf+xml",
+            "text/turtle",
+            "text/html"
+          ],
+          "endpoint": {
+            "http-methods": ["GET"],
+            "url": "http://ps.clarkparsia.com/peoplepets/explain/property/{subject}/{predicate}/{object}"
+          }
+        }
+      }
+    }
+  ],
+  "server-information": {
+    "description-created": "2010-07-09T06:46:27.975-04:00",
+    "administrative-contact": "support@clarkparsia.com",
+    "server-version": "0.9.2"
+  }
+}

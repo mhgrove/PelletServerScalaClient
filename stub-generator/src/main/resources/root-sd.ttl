@@ -1,0 +1,391 @@
+@prefix :        <tag:clarkparsia.com:pelletserver:> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cp:      <tag:clarkparsia.com,2010-06-21:pelletserver:> .
+@prefix http:    <http://www.w3.org/2006/http#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix hm:      <http://www.w3.org/2008/httpMethods#> .
+
+<>    a       rdfs:Resource ;
+      rdfs:isDefinedBy <http://ps.clarkparsia.com/schema/pellet-server-schema> ;
+      dct:created "2010-07-09T06:55:14.376-04:00"^^xsd:dateTime .
+
+<http://ps.clarkparsia.com/peoplepets/explain/unsat>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:UnsatExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/peoplepets/explain/unsat/{class}"^^xsd:string .
+
+<http://ps.clarkparsia.com/galen/classify>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:ClassificationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/galen/classify"^^xsd:string .
+
+<http://ps.clarkparsia.com/peoplepets/consistency>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:ConsistencyService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "application/sparql-results+json"^^xsd:string , "text/html"^^xsd:string , "application/sparql-results+xml"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/peoplepets/consistency"^^xsd:string .
+
+<http://ps.clarkparsia.com/wine/explain/property>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:PropertyExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/wine/explain/property/{subject}/{predicate}/{object}"^^xsd:string .
+
+<http://ps.clarkparsia.com/wine/realize>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:RealizationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/wine/realize"^^xsd:string .
+
+<http://ps.clarkparsia.com/galen/explain>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:ExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/galen/explain{?query}"^^xsd:string .
+
+<http://ps.clarkparsia.com/wine/query>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:QueryService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:POST , hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/sparql-results+json"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string , "application/sparql-results+xml"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/wine/query{?query,default-graph-uri,named-graph-uri}"^^xsd:string .
+
+<http://ps.clarkparsia.com/galen/explain/inconsistent>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:InconsistencyExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/galen/explain/inconsistent"^^xsd:string .
+
+<http://ps.clarkparsia.com/peoplepets/explain/instance>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:InstanceExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/peoplepets/explain/instance/{instance}/{class}"^^xsd:string .
+
+<http://ps.clarkparsia.com/galen>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:KnowledgeBase> ;
+      rdfs:label "galen"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasName>
+              "galen"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/json"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasService>
+              <http://ps.clarkparsia.com/galen/classify> , <http://ps.clarkparsia.com/galen/query> , <http://ps.clarkparsia.com/galen/search> , <http://ps.clarkparsia.com/galen/explain/subclass> , <http://ps.clarkparsia.com/galen/explain> , <http://ps.clarkparsia.com/galen/explain/property> , <http://ps.clarkparsia.com/galen/realize> , <http://ps.clarkparsia.com/galen/explain/instance> , <http://ps.clarkparsia.com/galen/explain/unsat> , <http://ps.clarkparsia.com/galen/ns-service> , <http://ps.clarkparsia.com/galen/explain/inconsistent> , <http://ps.clarkparsia.com/galen/consistency> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/galen"^^xsd:string .
+
+<http://ps.clarkparsia.com/wine/ns-service>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:NamespaceService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/json"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/wine/ns-service"^^xsd:string .
+
+<http://ps.clarkparsia.com/wine/explain/instance>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:InstanceExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/wine/explain/instance/{instance}/{class}"^^xsd:string .
+
+<http://ps.clarkparsia.com/peoplepets/classify>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:ClassificationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/peoplepets/classify"^^xsd:string .
+
+<http://ps.clarkparsia.com/wine/consistency>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:ConsistencyService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "application/sparql-results+json"^^xsd:string , "text/html"^^xsd:string , "application/sparql-results+xml"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/wine/consistency"^^xsd:string .
+
+<http://ps.clarkparsia.com/wine/explain/unsat>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:UnsatExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/wine/explain/unsat/{class}"^^xsd:string .
+
+<http://ps.clarkparsia.com/peoplepets>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:KnowledgeBase> ;
+      rdfs:label "peoplepets"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasName>
+              "peoplepets"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/json"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasService>
+              <http://ps.clarkparsia.com/peoplepets/explain/unsat> , <http://ps.clarkparsia.com/peoplepets/consistency> , <http://ps.clarkparsia.com/peoplepets/explain> , <http://ps.clarkparsia.com/peoplepets/explain/subclass> , <http://ps.clarkparsia.com/peoplepets/search> , <http://ps.clarkparsia.com/peoplepets/explain/property> , <http://ps.clarkparsia.com/peoplepets/classify> , <http://ps.clarkparsia.com/peoplepets/query> , <http://ps.clarkparsia.com/peoplepets/explain/inconsistent> , <http://ps.clarkparsia.com/peoplepets/ns-service> , <http://ps.clarkparsia.com/peoplepets/realize> , <http://ps.clarkparsia.com/peoplepets/explain/instance> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/peoplepets"^^xsd:string .
+
+<http://ps.clarkparsia.com/wine/search>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:SearchService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/json"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/wine/search{?search}"^^xsd:string .
+
+<http://ps.clarkparsia.com/wine/explain/inconsistent>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:InconsistencyExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/wine/explain/inconsistent"^^xsd:string .
+
+<http://ps.clarkparsia.com/peoplepets/ns-service>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:NamespaceService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/json"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/peoplepets/ns-service"^^xsd:string .
+
+<http://ps.clarkparsia.com>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:PelletServer> ;
+      dct:hasVersion "0.9.2"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasAdministrativeContact>
+              "support@clarkparsia.com"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/json"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/"^^xsd:string .
+
+<http://ps.clarkparsia.com/wine/explain/subclass>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:SubClassExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/wine/explain/subclass/{sub}/{super}"^^xsd:string .
+
+<http://ps.clarkparsia.com/peoplepets/explain>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:ExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/peoplepets/explain{?query}"^^xsd:string .
+
+<http://ps.clarkparsia.com/wine/explain>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:ExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/wine/explain{?query}"^^xsd:string .
+
+<http://ps.clarkparsia.com/peoplepets/explain/property>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:PropertyExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/peoplepets/explain/property/{subject}/{predicate}/{object}"^^xsd:string .
+
+<http://ps.clarkparsia.com/galen/realize>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:RealizationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/galen/realize"^^xsd:string .
+
+<http://ps.clarkparsia.com/galen/explain/property>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:PropertyExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/galen/explain/property/{subject}/{predicate}/{object}"^^xsd:string .
+
+<http://ps.clarkparsia.com/galen/consistency>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:ConsistencyService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "application/sparql-results+json"^^xsd:string , "text/html"^^xsd:string , "application/sparql-results+xml"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/galen/consistency"^^xsd:string .
+
+<http://ps.clarkparsia.com/peoplepets/explain/inconsistent>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:InconsistencyExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/peoplepets/explain/inconsistent"^^xsd:string .
+
+<http://ps.clarkparsia.com/wine>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:KnowledgeBase> ;
+      rdfs:label "wine"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasName>
+              "wine"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/json"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasService>
+              <http://ps.clarkparsia.com/wine/ns-service> , <http://ps.clarkparsia.com/wine/classify> , <http://ps.clarkparsia.com/wine/explain> , <http://ps.clarkparsia.com/wine/explain/property> , <http://ps.clarkparsia.com/wine/realize> , <http://ps.clarkparsia.com/wine/query> , <http://ps.clarkparsia.com/wine/explain/instance> , <http://ps.clarkparsia.com/wine/search> , <http://ps.clarkparsia.com/wine/explain/unsat> , <http://ps.clarkparsia.com/wine/consistency> , <http://ps.clarkparsia.com/wine/explain/inconsistent> , <http://ps.clarkparsia.com/wine/explain/subclass> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/wine"^^xsd:string .
+
+<http://ps.clarkparsia.com/galen/query>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:QueryService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:POST , hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/sparql-results+json"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string , "application/sparql-results+xml"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/galen/query{?query,default-graph-uri,named-graph-uri}"^^xsd:string .
+
+<http://ps.clarkparsia.com/galen/search>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:SearchService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/json"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/galen/search{?search}"^^xsd:string .
+
+<http://ps.clarkparsia.com/wine/classify>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:ClassificationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/wine/classify"^^xsd:string .
+
+<http://ps.clarkparsia.com/peoplepets/explain/subclass>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:SubClassExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/peoplepets/explain/subclass/{sub}/{super}"^^xsd:string .
+
+<http://ps.clarkparsia.com/galen/explain/subclass>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:SubClassExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/galen/explain/subclass/{sub}/{super}"^^xsd:string .
+
+<http://ps.clarkparsia.com/peoplepets/search>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:SearchService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/json"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/peoplepets/search{?search}"^^xsd:string .
+
+<http://ps.clarkparsia.com/galen/explain/instance>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:InstanceExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/galen/explain/instance/{instance}/{class}"^^xsd:string .
+
+<http://ps.clarkparsia.com/galen/explain/unsat>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:UnsatExplanationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/galen/explain/unsat/{class}"^^xsd:string .
+
+<http://ps.clarkparsia.com/galen/ns-service>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:NamespaceService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/json"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/galen/ns-service"^^xsd:string .
+
+<http://ps.clarkparsia.com/peoplepets/query>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:QueryService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:POST , hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/sparql-results+json"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string , "application/sparql-results+xml"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/peoplepets/query{?query,default-graph-uri,named-graph-uri}"^^xsd:string .
+
+<http://ps.clarkparsia.com/peoplepets/realize>
+      a       <tag:clarkparsia.com,2010-06-21:pelletserver:RealizationService> ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasHttpMethod>
+              hm:GET ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasResponseMimeType>
+              "text/turtle"^^xsd:string , "application/rdf+xml"^^xsd:string , "text/html"^^xsd:string ;
+      <tag:clarkparsia.com,2010-06-21:pelletserver:hasUriTemplate>
+              "http://ps.clarkparsia.com/peoplepets/realize"^^xsd:string .

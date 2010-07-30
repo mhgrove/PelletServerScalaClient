@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.clarkparsia</groupId>
+	<artifactId>scala-ps-parent</artifactId>
+	<packaging>pom</packaging>
+	<name>PelletServer Scala API</name>
+	<version>0.1-SNAPSHOT</version>
+	<description>Parent project for PelletServer Scala API</description>
+	<inceptionYear>2010</inceptionYear>
+	<organization>
+		<name>Clark and Parsia</name>
+		<url>http://www.clarkparsia.com</url>
+	</organization>
+	<modules>
+		<module>stub-generator</module>
+		<module>implementation</module>
+    <module>scala-ps-rdf</module>
+  </modules>
+</project>

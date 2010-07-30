@@ -1,0 +1,384 @@
+<rdf:RDF
+    xmlns:hm="http://www.w3.org/2008/httpMethods#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:http="http://www.w3.org/2006/http#"
+    xmlns="tag:clarkparsia.com:pelletserver:"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:cp="tag:clarkparsia.com,2010-06-21:pelletserver:"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="">
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-07-09T06:46:41.756-04:00</dct:created>
+    <rdfs:isDefinedBy rdf:resource="http://ps.clarkparsia.com/schema/pellet-server-schema"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/peoplepets/explain/unsat">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/peoplepets/explain/unsat/{class}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:UnsatExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/galen/classify">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/galen/classify</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:ClassificationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/peoplepets/consistency">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/sparql-results+json</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/sparql-results+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/peoplepets/consistency</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:ConsistencyService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/wine/explain/property">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/wine/explain/property/{subject}/{predicate}/{object}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:PropertyExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/wine/realize">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/wine/realize</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:RealizationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/galen/explain">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/galen/explain{?query}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:ExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/wine/query">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/sparql-results+json</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/sparql-results+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#POST"/>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/wine/query{?query,default-graph-uri,named-graph-uri}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:QueryService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/galen/explain/inconsistent">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/galen/explain/inconsistent</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:InconsistencyExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/peoplepets/explain/instance">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/peoplepets/explain/instance/{instance}/{class}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:InstanceExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/galen">
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/galen/query"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/galen/consistency"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/galen/explain/unsat"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/galen/classify"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/galen/explain/inconsistent"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/galen/explain"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/galen/explain/subclass"/>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/galen/explain/instance"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/galen/realize"/>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:KnowledgeBase"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/galen/explain/property"/>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">galen</cp:hasName>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/galen/search"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">galen</rdfs:label>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/json</cp:hasResponseMimeType>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/galen</cp:hasUriTemplate>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/galen/ns-service"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/wine/ns-service">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/json</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/wine/ns-service</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:NamespaceService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/wine/explain/instance">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/wine/explain/instance/{instance}/{class}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:InstanceExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/peoplepets/classify">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/peoplepets/classify</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:ClassificationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/wine/consistency">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/sparql-results+json</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/sparql-results+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/wine/consistency</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:ConsistencyService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/wine/explain/unsat">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/wine/explain/unsat/{class}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:UnsatExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/peoplepets">
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/peoplepets/explain/instance"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/peoplepets/query"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/peoplepets</cp:hasUriTemplate>
+    <cp:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peoplepets</cp:hasName>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/peoplepets/explain/subclass"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/peoplepets/explain/inconsistent"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/peoplepets/search"/>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peoplepets</rdfs:label>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/peoplepets/explain/unsat"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/peoplepets/realize"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/peoplepets/explain"/>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/peoplepets/consistency"/>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:KnowledgeBase"/>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/peoplepets/ns-service"/>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/json</cp:hasResponseMimeType>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/peoplepets/explain/property"/>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/peoplepets/classify"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/wine/search">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/json</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/wine/search{?search}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:SearchService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/wine/explain/inconsistent">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/wine/explain/inconsistent</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:InconsistencyExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/peoplepets/ns-service">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/json</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/peoplepets/ns-service</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:NamespaceService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/json</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/</cp:hasUriTemplate>
+    <cp:hasAdministrativeContact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">support@clarkparsia.com</cp:hasAdministrativeContact>
+    <dct:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.9.2</dct:hasVersion>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:PelletServer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/wine/explain/subclass">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/wine/explain/subclass/{sub}/{super}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:SubClassExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/peoplepets/explain">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/peoplepets/explain{?query}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:ExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/wine/explain">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/wine/explain{?query}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:ExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/peoplepets/explain/property">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/peoplepets/explain/property/{subject}/{predicate}/{object}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:PropertyExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/galen/realize">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/galen/realize</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:RealizationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/galen/explain/property">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/galen/explain/property/{subject}/{predicate}/{object}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:PropertyExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/galen/consistency">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/sparql-results+json</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/sparql-results+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/galen/consistency</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:ConsistencyService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/peoplepets/explain/inconsistent">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/peoplepets/explain/inconsistent</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:InconsistencyExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/wine">
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/wine</cp:hasUriTemplate>
+    <cp:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wine</cp:hasName>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/wine/explain/subclass"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/wine/explain/inconsistent"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/wine/explain/property"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/wine/consistency"/>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/json</cp:hasResponseMimeType>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/wine/realize"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/wine/explain"/>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/wine/explain/unsat"/>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/wine/explain/instance"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/wine/classify"/>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:KnowledgeBase"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wine</rdfs:label>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/wine/ns-service"/>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/wine/query"/>
+    <cp:hasService rdf:resource="http://ps.clarkparsia.com/wine/search"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/galen/query">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/sparql-results+json</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/sparql-results+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#POST"/>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/galen/query{?query,default-graph-uri,named-graph-uri}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:QueryService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/galen/search">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/json</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/galen/search{?search}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:SearchService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/wine/classify">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/wine/classify</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:ClassificationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/peoplepets/explain/subclass">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/peoplepets/explain/subclass/{sub}/{super}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:SubClassExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/galen/explain/subclass">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/galen/explain/subclass/{sub}/{super}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:SubClassExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/peoplepets/search">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/json</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/peoplepets/search{?search}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:SearchService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/galen/explain/instance">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/galen/explain/instance/{instance}/{class}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:InstanceExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/galen/explain/unsat">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/galen/explain/unsat/{class}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:UnsatExplanationService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/galen/ns-service">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/json</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/galen/ns-service</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:NamespaceService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/peoplepets/query">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/sparql-results+json</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/sparql-results+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#POST"/>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/peoplepets/query{?query,default-graph-uri,named-graph-uri}</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:QueryService"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ps.clarkparsia.com/peoplepets/realize">
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/html</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/turtle</cp:hasResponseMimeType>
+    <cp:hasResponseMimeType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</cp:hasResponseMimeType>
+    <cp:hasHttpMethod rdf:resource="http://www.w3.org/2008/httpMethods#GET"/>
+    <cp:hasUriTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ps.clarkparsia.com/peoplepets/realize</cp:hasUriTemplate>
+    <rdf:type rdf:resource="tag:clarkparsia.com,2010-06-21:pelletserver:RealizationService"/>
+  </rdf:Description>
+</rdf:RDF>
