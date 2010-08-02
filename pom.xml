@@ -5,7 +5,7 @@
 	<artifactId>scala-ps-parent</artifactId>
 	<packaging>pom</packaging>
 	<name>PelletServer Scala API</name>
-	<version>0.1-SNAPSHOT</version>
+	<version>0.1-RC1</version>
 	<description>Parent project for PelletServer Scala API</description>
   <url>http://clarkparsia.github.com/PelletServerScalaClient/</url>
 	<inceptionYear>2010</inceptionYear>
