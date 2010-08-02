@@ -4,6 +4,11 @@
 	<artifactId>scala-ps-api</artifactId>
 	<name>PelletServer Scala API core</name>
 	<version>0.1-SNAPSHOT</version>
+  <parent>
+    <artifactId>scala-ps-parent</artifactId>
+    <groupId>com.clarkparsia</groupId>
+    <version>0.1-SNAPSHOT</version>
+  </parent>
 	<repositories>
     <repository>
       <id>scala-tools.org</id>
@@ -68,15 +73,16 @@
 	</dependencies>
   <reporting>
     <plugins>
-      <plugin>
+<!--      <plugin>
         <groupId>org.scala-tools</groupId>
         <artifactId>maven-scala-plugin</artifactId>
         <configuration>
           <scalaVersion>${scala.version}</scalaVersion>
         </configuration>
-      </plugin>
+      </plugin> -->
       <plugin>
-        <artifactId>maven-surefire-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>

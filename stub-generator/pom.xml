@@ -5,6 +5,11 @@
   <packaging>maven-plugin</packaging>
   <name>PelletServer Scala API stub generator</name>
   <version>0.1-SNAPSHOT</version>
+  <parent>
+    <artifactId>scala-ps-parent</artifactId>
+    <groupId>com.clarkparsia</groupId>
+    <version>0.1-SNAPSHOT</version>
+  </parent>
   <description>Generate source code stubs from PelletServer RDF schema.</description>
   <inceptionYear>2010</inceptionYear>
   <properties>
@@ -198,7 +203,8 @@
         </configuration>
       </plugin>
       <plugin>
-        <artifactId>maven-surefire-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
