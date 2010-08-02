@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>PelletServer Scala API stub generator</name>
+      <prefix>scala-ps-stubgenerator</prefix>
+      <artifactId>scala-ps-stubgenerator</artifactId>
+    </plugin>
+  </plugins>
+</metadata>
