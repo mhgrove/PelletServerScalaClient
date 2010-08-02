@@ -4,11 +4,11 @@
   <artifactId>scala-ps-stubgenerator</artifactId>
   <packaging>maven-plugin</packaging>
   <name>PelletServer Scala API stub generator</name>
-  <version>0.1-RC1</version>
+  <version>0.1-RC2-SNAPSHOT</version>
   <parent>
     <artifactId>scala-ps-parent</artifactId>
     <groupId>com.clarkparsia</groupId>
-    <version>0.1-RC1</version>
+    <version>0.1-RC2-SNAPSHOT</version>
   </parent>
   <description>Generate source code stubs from PelletServer RDF schema.</description>
   <inceptionYear>2010</inceptionYear>
