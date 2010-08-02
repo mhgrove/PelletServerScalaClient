@@ -24,9 +24,9 @@
       <url>http://scala-tools.org/repo-releases</url>
     </repository>
     <repository>
-      <id>snapshot.scala-tools.org</id>
-      <name>Scala-Tools Maven2 SNAPSHOT Repository</name>
-      <url>http://scala-tools.org/repo-snapshots</url>
+      <id>databinder</id>
+      <name>databinder.net Maven2 Repository</name>
+      <url>http://databinder.net/repo</url>
     </repository>
     <repository>
       <id>floop</id>
@@ -90,9 +90,9 @@
     	<version>2.2.1</version>
     </dependency>
     <dependency>
-    	<groupId>net.liftweb</groupId>
-    	<artifactId>lift-json_2.8.0</artifactId>
-    	<version>2.1-SNAPSHOT</version>
+    	<groupId>net.databinder</groupId>
+    	<artifactId>dispatch-lift-json_2.8.0</artifactId>
+    	<version>0.7.4</version>
     </dependency>
     <dependency>
     	<groupId>net.databinder</groupId>
