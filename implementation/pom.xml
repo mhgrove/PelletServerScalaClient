@@ -147,4 +147,11 @@
       </plugin>
     </plugins>
   </build>
+  <distributionManagement>
+    <site>
+      <id>github-pages</id>
+      <name>GitHub PelletServerScalaClient site</name>
+      <url>file:///${user.dir}/../temp/${project.artifactId}</url>
+    </site>
+  </distributionManagement>
 </project>

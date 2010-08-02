@@ -7,6 +7,7 @@
 	<name>PelletServer Scala API</name>
 	<version>0.1-SNAPSHOT</version>
 	<description>Parent project for PelletServer Scala API</description>
+  <url>http://clarkparsia.github.com/PelletServerScalaClient/</url>
 	<inceptionYear>2010</inceptionYear>
 	<organization>
 		<name>Clark and Parsia</name>
@@ -28,7 +29,22 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
         <version>2.0</version>
+        <configuration>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+        </configuration>
       </plugin>
     </plugins>
   </build>
+  <distributionManagement>
+    <site>
+      <id>github-pages</id>
+      <name>GitHub PelletServerScalaClient site</name>
+      <url>file:///${user.dir}/../temp</url>
+    </site>
+    <repository>
+      <id>github-pages</id>
+      <name>GitHub PelletServerScalaClient repository</name>
+      <url>file:///${user.dir}/../temp</url>
+    </repository>
+  </distributionManagement>
 </project>
