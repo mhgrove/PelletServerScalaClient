@@ -48,7 +48,7 @@ Into the PSExample.scala, paste the following:
 
     class PSProject(info: ProjectInfo) extends DefaultProject(info) {
       val git = "C&P git Maven repository" at "http://clarkparsia.github.com/PelletServerScalaClient/maven2"
-      val psScalaApi = "com.clarkparsia" % "scala-ps-api" % "0.1"
+      val psScalaApi = "com.clarkparsia" % "scala-ps-api" % "0.1-RC2-SNAPSHOT"
     }
 
 and then run "sbt update" to download the required jars.

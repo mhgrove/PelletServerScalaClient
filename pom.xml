@@ -44,7 +44,7 @@
     <repository>
       <id>github-pages</id>
       <name>GitHub PelletServerScalaClient repository</name>
-      <url>file:///${user.dir}/../temp</url>
+      <url>file:///${user.dir}/../temp/maven2</url>
     </repository>
   </distributionManagement>
 </project>
