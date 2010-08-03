@@ -1,7 +1,8 @@
 package com.clarkparsia.pelletserver.scala
 
 import org.specs._
-import net.liftweb.json.JsonParser.parse
+//import net.liftweb.json.JsonParser.parse
+import dispatch.json.JsValue
 import java.io.InputStreamReader
 import com.clarkparsia.pelletserver.scala.results.PlainJsonResult._
 import com.clarkparsia.pelletserver.scala.results.SparqlBooleanResult._
@@ -19,8 +20,8 @@ class FactoryTest extends SpecificationWithJUnit {
 	
 	"Server factory object" should {
 		"parse JSON" in {
-			val json = parse(new InputStreamReader(SD_JSON.openStream))
-			val serviceDescription = json.extract[JServiceDescription]
+			val json = JsValue.fromStream(SD_JSON.openStream)
+			val serviceDescription = CustomExtractor.extractServiceDescription(json)
 			serviceDescription.`server-information`.`server-version` must_== "0.9.2"
 		}
 		"handle live ps.clarkparsia.com" in {

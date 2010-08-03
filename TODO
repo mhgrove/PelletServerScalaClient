@@ -1,7 +1,2 @@
-* Implement toString on KBs so they show their name.
-
-* Look at getting rid of liftweb-json dependency and making gleaning
-  info from JSON service description more resilient to changes.
-
 * Look at using Dan Connolly's swap-scala [1] for leaner RDF parsing
   with Scala parser/combinators.

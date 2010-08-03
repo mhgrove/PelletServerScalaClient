@@ -89,14 +89,14 @@ object StubGenerator {
    * <p>Parameter-less methods looks like this:
    * <pre>
    *   def realize = {
-   *       mimetype: String => new Result(fetchResponse(info.`kb-services`.realize)(mimetype)) with RdfResponse with RdfXmlResponse
+   *       mimetype: String => new Result(fetchResponse(info.`kb-services`("realize")(mimetype)) with RdfResponse with RdfXmlResponse
    *   }
    * </pre>
    * while methods with parameters look like this:
    * <pre>
    *   def query(query: String = null, defaultGraphUri: String = null, namedGraphUri: String = null) = {
    *       mimetype: String => new Result(fetchResponse(
-   *           info.`kb-services`.query,
+   *           info.`kb-services`("query"),
    *           Map("query" -> query,  "default-graph-uri" -> defaultGraphUri, "named-graph-uri" -> namedGraphUri)
    *       )(mimetype)) with SparqlXmlResponse with JsonResponse with SparqlResponse
    * </pre>
@@ -123,12 +123,12 @@ object StubGenerator {
 	 	  }
 	 	  writer.write(" = {\n")
 	 	  writer.write("      mimetype: String => new Result(fetchResponse(\n")
-	 	  writer.write("          info.`kb-services`.%s".format(
-	 	      if (methodName.contains('-')) {
-	 	    	  "`%s`".format(methodName)
-	 	      } else {
-	 	     	  methodName
-	 	      }))
+	 	  writer.write("          info.`kb-services`(\"%s\")".format(methodName))
+//	 	      if (methodName.contains('-')) {
+//	 	    	  "`%s`".format(methodName)
+//	 	      } else {
+//	 	     	  methodName
+//	 	      }))
 	 	  if (params.length > 0) {
 	 	 	  writer.write(""",
           Map(%s)

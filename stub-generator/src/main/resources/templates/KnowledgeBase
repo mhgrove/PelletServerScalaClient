@@ -22,7 +22,10 @@ class Result(r: Request) {
 class KnowledgeBase(info: JKnowledgeBase) extends AbstractKnowledgeBase {
 
   def hasName() = List(info.name)
-  def hasService() = Nil
+  def hasService() = Nil // TODO: not currently used; reasons to keep?
+  override def toString() = {
+	  "KnowledgeBase(%s)".format(info.name)
+  }
   
   private def fillTemplate(template: String, params: Map[String, String]) = {
 	  var queryParams: List[Pair[String, String]] = Nil

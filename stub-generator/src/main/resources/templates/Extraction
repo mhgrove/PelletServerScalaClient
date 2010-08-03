@@ -2,12 +2,12 @@ package com.clarkparsia.pelletserver.scala.api
 
 // JSON extraction classes
 // Based on server-version 0.9.2
-case class JServerInformation(`description-created`: java.util.Date, `administrative-contact`: String,  `server-version`: String)  
+case class JServerInformation(`description-created`: Option[java.util.Date], `administrative-contact`: String,  `server-version`: String)  
 case class JEndpoint(`http-methods`: List[String], url: String)
 case class JService(`response-mimetype`: List[String], `supported-entailment-profile`:Option[String], endpoint: JEndpoint)
-case class JKbServices(realize: JService, `ns-service`: JService, query: JService, consistency: JService, 
-        `explain-unsat`: JService, `explain-instance`: JService, `kb-discovery`: JService,
-        classify: JService, search: JService, `explain-subclass`: JService, `explain-inconsistent`: JService,
-        explain: JService, `explain-property`: JService)
-case class JKnowledgeBase(name: String, `kb-services`: JKbServices) 
+//case class JKbServices(realize: JService, `ns-service`: JService, query: JService, consistency: JService, 
+//        `explain-unsat`: JService, `explain-instance`: JService, `kb-discovery`: JService,
+//        classify: JService, search: JService, `explain-subclass`: JService, `explain-inconsistent`: JService,
+//        explain: JService, `explain-property`: JService)
+case class JKnowledgeBase(name: String, `kb-services`: Map[String, JService]) 
 case class JServiceDescription(`ps-discovery`: JService, `knowledge-bases`: List[JKnowledgeBase], `server-information`: JServerInformation)

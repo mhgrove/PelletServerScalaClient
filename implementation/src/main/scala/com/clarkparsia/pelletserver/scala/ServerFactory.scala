@@ -2,40 +2,14 @@ package com.clarkparsia.pelletserver.scala
 
 import java.net.URL
 import java.io.InputStreamReader
-import net.liftweb.json.JsonParser.parse
+//import net.liftweb.json.JsonParser.parse
+import dispatch.json.JsValue
 import dispatch.:/
 import dispatch.Http
 import dispatch.Http.str2req
-import dispatch.liftjson.Js.Request2JsonRequest
-import net.liftweb.json.{Formats, DateFormat}
-import java.util.{Date, GregorianCalendar, TimeZone}
-import javax.xml.datatype.DatatypeFactory
+import dispatch.json.JsHttp.Request2JsonRequest
+//import net.liftweb.json.{Formats, DateFormat}
 import com.clarkparsia.pelletserver.scala.api.{KnowledgeBase,JServiceDescription}
-
-/** 
- * Service description uses XML date/time format, so this object can be used to
- * parse and format XML dates for the JSON extractors.
- * 
- */
-
-object SDFormats extends Formats {
-	val dtf = DatatypeFactory.newInstance
-	val dateFormat = new DateFormat {
-		def parse(s: String): Option[Date] = {
-			try {
-				val gc = dtf.newXMLGregorianCalendar(s).toGregorianCalendar
-				Some(gc.getTime)
-			} catch {
-				case e: Exception => None
-			}
-		}
-		def format(d: Date) = {
-			val gc = new GregorianCalendar(TimeZone.getTimeZone("UTC"))
-			gc.setTime(d)
-			dtf.newXMLGregorianCalendar(gc).toXMLFormat
-		}
-	}
-}
 
 /**
  * Instances of PelletServer are created from a service description document in JSON,
@@ -47,7 +21,7 @@ object SDFormats extends Formats {
 class PelletServer(serviceDescription: URL) {
 
 	private val json = if ("file".equalsIgnoreCase(serviceDescription.getProtocol)) {
-		parse(new InputStreamReader(serviceDescription.openStream))
+		JsValue.fromStream(serviceDescription.openStream)
 	} else {
 		// The databinder.dispatch syntax can be opaque.
 		// The <:< method takes a request and adds the given headers; the serviceDescription string
@@ -57,10 +31,9 @@ class PelletServer(serviceDescription: URL) {
 		Http(serviceDescription.toString <:< Map("Accept" -> "text/json") ># { identity })
 	}
 	
-	// Use the XML date format parser and default parsers...
-	private implicit val formats = SDFormats
 	// to extract the JSON object into our own case classes.
-	private val sd = json.extract[JServiceDescription]
+	//private val sd = json.extract[JServiceDescription]
+	private val sd = CustomExtractor.extractServiceDescription(json)
 	
 	/**
 	 * Returns the list of knowledge bases available from the remote Pellet Server.
