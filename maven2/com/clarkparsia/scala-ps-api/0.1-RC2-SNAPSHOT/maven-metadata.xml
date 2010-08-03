@@ -2,13 +2,12 @@
 <metadata>
   <groupId>com.clarkparsia</groupId>
   <artifactId>scala-ps-api</artifactId>
-  <version>0.1-RC1</version>
+  <version>0.1-RC2-SNAPSHOT</version>
   <versioning>
-    <release>0.1-RC1</release>
-    <versions>
-      <version>0.1-RC1</version>
-      <version>0.1-RC2-SNAPSHOT</version>
-    </versions>
+    <snapshot>
+      <timestamp>20100803.165409</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
     <lastUpdated>20100803165519</lastUpdated>
   </versioning>
 </metadata>

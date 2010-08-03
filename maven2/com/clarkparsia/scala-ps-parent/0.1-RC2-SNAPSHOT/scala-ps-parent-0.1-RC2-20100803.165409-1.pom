@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.clarkparsia</groupId>
+	<artifactId>scala-ps-parent</artifactId>
+	<packaging>pom</packaging>
+	<name>PelletServer Scala API</name>
+	<version>0.1-RC2-SNAPSHOT</version>
+	<description>Parent project for PelletServer Scala API</description>
+  <url>http://clarkparsia.github.com/PelletServerScalaClient/</url>
+	<inceptionYear>2010</inceptionYear>
+	<organization>
+		<name>Clark and Parsia</name>
+		<url>http://www.clarkparsia.com</url>
+	</organization>
+  <scm>
+    <connection>scm:git:git@github.com:clarkparsia/PelletServerScalaClient.git</connection>
+    <url>http://github.com/clarkparsia/PelletServerScalaClient</url>
+    <developerConnection>scm:git:git@github.com:clarkparsia/PelletServerScalaClient.git</developerConnection>
+  </scm>
+	<modules>
+		<module>stub-generator</module>
+		<module>implementation</module>
+    <module>scala-ps-rdf</module>
+  </modules>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.0</version>
+        <configuration>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <distributionManagement>
+    <site>
+      <id>github-pages</id>
+      <name>GitHub PelletServerScalaClient site</name>
+      <url>file:///${user.dir}/../temp</url>
+    </site>
+    <repository>
+      <id>github-pages</id>
+      <name>GitHub PelletServerScalaClient repository</name>
+      <url>file:///${user.dir}/../temp/maven2</url>
+    </repository>
+  </distributionManagement>
+</project>
