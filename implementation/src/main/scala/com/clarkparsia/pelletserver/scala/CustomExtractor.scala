@@ -2,7 +2,7 @@ package com.clarkparsia.pelletserver.scala
 
 import dispatch.json._
 import dispatch.json.Js._
-import com.clarkparsia.pelletserver.scala.api._
+import com.clarkparsia.pelletserver.scala.api.json._
 import javax.xml.datatype.DatatypeFactory
 import java.util.{Date, GregorianCalendar, TimeZone}
 

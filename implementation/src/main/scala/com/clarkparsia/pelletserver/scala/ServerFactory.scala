@@ -9,7 +9,8 @@ import dispatch.Http
 import dispatch.Http.str2req
 import dispatch.json.JsHttp.Request2JsonRequest
 //import net.liftweb.json.{Formats, DateFormat}
-import com.clarkparsia.pelletserver.scala.api.{KnowledgeBase,JServiceDescription}
+import com.clarkparsia.pelletserver.scala.api.KnowledgeBase
+import com.clarkparsia.pelletserver.scala.api.json.JServiceDescription
 
 /**
  * Instances of PelletServer are created from a service description document in JSON,

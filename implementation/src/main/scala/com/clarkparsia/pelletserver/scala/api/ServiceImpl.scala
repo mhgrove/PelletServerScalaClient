@@ -1,6 +1,7 @@
 package com.clarkparsia.pelletserver.scala.api
 
-import com.clarkparsia.pelletserver.scala._
+import com.clarkparsia.pelletserver.scala.api.schema.AbstractService
+import com.clarkparsia.pelletserver.scala.api.json.JService
 
 trait DefaultService {
 	protected val info: JService

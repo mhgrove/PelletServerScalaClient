@@ -1,6 +1,6 @@
 package com.clarkparsia.pelletserver.scala.results
 
-import com.clarkparsia.pelletserver.scala.api.{Result,RdfResponse}
+import com.clarkparsia.pelletserver.scala.api.response.{Result,RdfResponse}
 import com.hp.hpl.jena.rdf.model.{Model, ModelFactory}
 import dispatch.Http
 

@@ -1,6 +1,6 @@
 package com.clarkparsia.pelletserver.scala.results
 
-import com.clarkparsia.pelletserver.scala.api.{Result,RdfXmlResponse,SparqlXmlResponse,SparqlResponse}
+import com.clarkparsia.pelletserver.scala.api.response.{Result,RdfXmlResponse,SparqlXmlResponse,SparqlResponse}
 import dispatch.Http
 import java.net.URI
 

@@ -73,8 +73,10 @@ class GenerateStubsTest extends SpecificationWithJUnit {
 			usingTempDir { tempDir =>
 				StubGenerator.setOutputDirectory(tempDir)
 				StubGenerator.generateAbstractHierarchy
-				tempDir.listFiles must have size(1)
-				new Compiler().compileFile(tempDir.listFiles()(0)) mustBe true
+				val packageDir = new File(tempDir, StubGenerator.ABSTRACT_PACKAGE.replace('.', File.separatorChar))
+				packageDir.exists mustBe true
+				packageDir.listFiles must have size(1)
+				new Compiler().compileFile(packageDir.listFiles.head) mustBe true
 			}
 		}
 		"Generalize implementation based on service description" in {
@@ -82,18 +84,22 @@ class GenerateStubsTest extends SpecificationWithJUnit {
 			usingTempDir { tempDir =>
 				StubGenerator.setOutputDirectory(tempDir)
 				StubGenerator.generateMethods(SD_JSON)
-				tempDir.listFiles must have size(1)
+				val methodPackageDir = new File(tempDir, StubGenerator.METHOD_PACKAGE.replace('.', File.separatorChar))
+				methodPackageDir.exists mustBe true
+				methodPackageDir.listFiles must have size(1)
 				// also need the hierarchy generated and compiled
 				StubGenerator.generateAbstractHierarchy
-				tempDir.listFiles must have size(2)
+				val abstractPackageDir = new File(tempDir, StubGenerator.ABSTRACT_PACKAGE.replace('.', File.separatorChar))
+				abstractPackageDir.listFiles must have size(1)
 				// and the case classes for JSON extraction
 				StubGenerator.generateExtractionClasses
-				tempDir.listFiles must have size(3)
+				val extractionPackageDir = new File(tempDir, StubGenerator.EXTRACTION_PACKAGE.replace('.', File.separatorChar))
+				extractionPackageDir.listFiles must have size(1)
 				val compiler = new Compiler()
 				// compile sources in one session so they pick up dependent definitions
-				compiler.compileFile(new File(tempDir, StubGenerator.ABSTRACT_SCALA)) mustBe true
-				compiler.compileFile(new File(tempDir, StubGenerator.EXTRACTION_SCALA)) mustBe true
-				compiler.compileFile(new File(tempDir, StubGenerator.KB_SCALA)) mustBe true
+				compiler.compileFile(new File(abstractPackageDir, StubGenerator.ABSTRACT_SCALA)) mustBe true
+				compiler.compileFile(new File(extractionPackageDir, StubGenerator.EXTRACTION_SCALA)) mustBe true
+				compiler.compileFile(new File(methodPackageDir, StubGenerator.KB_SCALA)) mustBe true
 			}
 		}
 	}  

@@ -10,7 +10,7 @@ import com.clarkparsia.pelletserver.scala.results.RdfXmlResult._
 import com.clarkparsia.pelletserver.scala.results.SparqlXmlResult._
 import com.clarkparsia.pelletserver.scala.results.SparqlResult._
 import dispatch.StatusCode
-import com.clarkparsia.pelletserver.scala.api.JServiceDescription
+import com.clarkparsia.pelletserver.scala.api.json.JServiceDescription
 import scala.math.Ordering._
 
 class FactoryTest extends SpecificationWithJUnit {

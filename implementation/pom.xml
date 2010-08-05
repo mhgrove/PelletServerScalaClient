@@ -68,13 +68,22 @@
 	</dependencies>
   <reporting>
     <plugins>
-<!--      <plugin>
+      <plugin>
         <groupId>org.scala-tools</groupId>
         <artifactId>maven-scala-plugin</artifactId>
         <configuration>
           <scalaVersion>${scala.version}</scalaVersion>
+          <!-- scaladocs doesn't include generated sources directory, so stanza
+               below can force it to build docs, but unfortunately then won't run tests :(
+          -->
+          <!--
+          <sourceDir>.</sourceDir>
+          <includes>
+            <include>src/main/**/*.scala</include>
+            <include>target/generated-sources/scala-ps-stubgenerator/**/*.scala</include>
+          </includes> -->
         </configuration>
-      </plugin> -->
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>

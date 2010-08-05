@@ -4,20 +4,25 @@ import dispatch.Request
 import dispatch.Http.str2req
 import scala.util.matching.Regex
 import java.net.URI
+import com.clarkparsia.pelletserver.scala.api.json.{JKnowledgeBase, JService}
+import com.clarkparsia.pelletserver.scala.api.schema.AbstractKnowledgeBase
 
-sealed abstract trait ResultsFormat
-trait PlainJsonResponse extends ResultsFormat
-trait RdfResponse extends ResultsFormat
-trait RdfXmlResponse extends ResultsFormat
-trait SparqlResponse extends ResultsFormat
-trait PlainXmlResponse extends ResultsFormat
-trait SparqlXmlResponse extends ResultsFormat
-trait SparqlJsonResponse extends ResultsFormat
-trait SparqlBooleanResponse extends ResultsFormat
-
-class Result(r: Request) {
-	val req = r
+package response {
+	sealed abstract trait ResultsFormat
+	trait PlainJsonResponse extends ResultsFormat
+	trait RdfResponse extends ResultsFormat
+	trait RdfXmlResponse extends ResultsFormat
+	trait SparqlResponse extends ResultsFormat
+	trait PlainXmlResponse extends ResultsFormat
+	trait SparqlXmlResponse extends ResultsFormat
+	trait SparqlJsonResponse extends ResultsFormat
+	trait SparqlBooleanResponse extends ResultsFormat
+	
+	class Result(r: Request) {
+		val req = r
+	}
 }
+import response._
 
 class KnowledgeBase(info: JKnowledgeBase) extends AbstractKnowledgeBase {
 

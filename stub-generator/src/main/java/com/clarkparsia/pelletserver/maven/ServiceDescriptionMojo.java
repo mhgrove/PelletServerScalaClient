@@ -59,8 +59,7 @@ public class ServiceDescriptionMojo extends AbstractMojo {
 			}
 		}
 		StubGenerator.loadSchema(schema);
-		File directoryWithPackage = new File(outputDirectory, StubGenerator.PACKAGE().replace('.', File.separatorChar));
-		StubGenerator.setOutputDirectory(directoryWithPackage);
+		StubGenerator.setOutputDirectory(outputDirectory);
 		StubGenerator.generateAbstractHierarchy();
 		if (serviceDescription == null) {
 			getLog().info("Using built-in service description.");
