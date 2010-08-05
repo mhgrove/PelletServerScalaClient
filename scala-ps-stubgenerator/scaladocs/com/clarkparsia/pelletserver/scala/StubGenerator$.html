@@ -171,11 +171,27 @@
             
           </div>
           
+    </li><li visbl="pub" name="com.clarkparsia.pelletserver.scala.StubGenerator#ABSTRACT_PACKAGE">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">ABSTRACT_PACKAGE</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" name="com.clarkparsia.pelletserver.scala.StubGenerator#ABSTRACT_SCALA">
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
         <span class="name">ABSTRACT_SCALA</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.clarkparsia.pelletserver.scala.StubGenerator#EXTRACTION_PACKAGE">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">EXTRACTION_PACKAGE</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       
@@ -195,11 +211,11 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.clarkparsia.pelletserver.scala.StubGenerator#PACKAGE">
+    </li><li visbl="pub" name="com.clarkparsia.pelletserver.scala.StubGenerator#METHOD_PACKAGE">
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">PACKAGE</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">METHOD_PACKAGE</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       
@@ -208,6 +224,14 @@
       <span class="kind">val</span>
       <span class="symbol">
         <span class="name">RESERVED</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="java.lang.String">String</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.clarkparsia.pelletserver.scala.StubGenerator#ROOT_PACKAGE">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">ROOT_PACKAGE</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       
@@ -374,10 +398,10 @@ there are no more references to the object.</p><p>The details of when and if the
             <p class="shortcomment cmt">Generate Scala source code for each &quot;method&quot; in a PelletServer service description.</p>
             <div class="fullcomment"><div class="comment cmt"><p>Generate Scala source code for each &quot;method&quot; in a PelletServer service description.
 It is assumed that each knowledge-base in a service description has the same methods with the same signature.</p><p>Parameter-less methods looks like this:<pre>  def realize = {
-      mimetype: String =&gt; new Result(fetchResponse(info.<code>kb-services</code>.realize)(mimetype)) with RdfResponse with RdfXmlResponse
+      mimetype: String =&gt; new Result(fetchResponse(info.<code>kb-services</code>(&quot;realize&quot;)(mimetype)) with RdfResponse with RdfXmlResponse
   }</pre>while methods with parameters look like this:<pre>  def query(query: String = null, defaultGraphUri: String = null, namedGraphUri: String = null) = {
       mimetype: String =&gt; new Result(fetchResponse(
-          info.<code>kb-services</code>.query,
+          info.<code>kb-services</code>(&quot;query&quot;),
           Map(&quot;query&quot; -&gt; query,  &quot;default-graph-uri&quot; -&gt; defaultGraphUri, &quot;named-graph-uri&quot; -&gt; namedGraphUri)
       )(mimetype)) with SparqlXmlResponse with JsonResponse with SparqlResponse</pre></p></div>
             
@@ -530,11 +554,11 @@ possible to check whether the contents of the list are of the requested typed.
             
           </div>
           
-    </li><li visbl="pub" name="com.clarkparsia.pelletserver.scala.StubGenerator#outputDirectory">
+    </li><li visbl="pub" name="com.clarkparsia.pelletserver.scala.StubGenerator#rootOutputDirectory">
       <h4 class="signature">
       <span class="kind">var</span>
       <span class="symbol">
-        <span class="name">outputDirectory</span><span class="result">: <span class="extype" name="java.io.File">File</span></span>
+        <span class="name">rootOutputDirectory</span><span class="result">: <span class="extype" name="java.io.File">File</span></span>
       </span>
       </h4>
       

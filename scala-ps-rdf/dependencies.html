@@ -42,7 +42,7 @@
   
     
             <div class="xleft">
-        Last Published: 2010-08-02
+        Last Published: 2010-08-05
                       </div>
             <div class="xright">            <a href="">PelletServer Scala API for RDF/XML</a>
             
@@ -186,7 +186,7 @@
 </tr>
 <tr class="b"><td>com.clarkparsia</td>
 <td><a href="http://clarkparsia.github.com/PelletServerScalaClient/scala-ps-api" class="externalLink">scala-ps-api</a></td>
-<td>0.1-RC1</td>
+<td>0.1-RC2-SNAPSHOT</td>
 <td>jar</td>
 </tr>
 <tr class="a"><td>com.hp.hpl.jena</td>
@@ -240,23 +240,23 @@
 <td>3.4.4</td>
 <td>jar</td>
 </tr>
-<tr class="a"><td>com.thoughtworks.paranamer</td>
-<td><a href="http://paranamer.codehaus.org/paranamer" class="externalLink">paranamer</a></td>
-<td>2.0</td>
-<td>jar</td>
-</tr>
-<tr class="b"><td>commons-codec</td>
+<tr class="a"><td>commons-codec</td>
 <td><a href="http://jakarta.apache.org/commons/codec/" class="externalLink">commons-codec</a></td>
 <td>1.3</td>
 <td>jar</td>
 </tr>
-<tr class="a"><td>commons-logging</td>
+<tr class="b"><td>commons-logging</td>
 <td><a href="http://commons.apache.org/logging" class="externalLink">commons-logging</a></td>
 <td>1.1.1</td>
 <td>jar</td>
 </tr>
-<tr class="b"><td>net.databinder</td>
+<tr class="a"><td>net.databinder</td>
 <td>dispatch-futures_2.8.0</td>
+<td>0.7.4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>net.databinder</td>
+<td>dispatch-http-json_2.8.0</td>
 <td>0.7.4</td>
 <td>jar</td>
 </tr>
@@ -266,31 +266,26 @@
 <td>jar</td>
 </tr>
 <tr class="b"><td>net.databinder</td>
-<td>dispatch-lift-json_2.8.0</td>
+<td>dispatch-json_2.8.0</td>
 <td>0.7.4</td>
 <td>jar</td>
 </tr>
-<tr class="a"><td>net.liftweb</td>
-<td>lift-json_2.8.0</td>
-<td>2.0-M5</td>
-<td>jar</td>
-</tr>
-<tr class="b"><td>org.apache.httpcomponents</td>
+<tr class="a"><td>org.apache.httpcomponents</td>
 <td><a href="http://hc.apache.org/httpcomponents-client" class="externalLink">httpclient</a></td>
 <td>4.0.1</td>
 <td>jar</td>
 </tr>
-<tr class="a"><td>org.apache.httpcomponents</td>
+<tr class="b"><td>org.apache.httpcomponents</td>
 <td><a href="http://hc.apache.org/httpcomponents-core/" class="externalLink">httpcore</a></td>
 <td>4.0.1</td>
 <td>jar</td>
 </tr>
-<tr class="b"><td>org.slf4j</td>
+<tr class="a"><td>org.slf4j</td>
 <td><a href="http://www.slf4j.org" class="externalLink">slf4j-api</a></td>
 <td>1.5.8</td>
 <td>jar</td>
 </tr>
-<tr class="a"><td>xerces</td>
+<tr class="b"><td>xerces</td>
 <td>xercesImpl</td>
 <td>2.7.1</td>
 <td>jar</td>
@@ -299,25 +294,25 @@
 </div>
 <div class="section"><h3>runtime</h3>
 <p>The following is a list of runtime dependencies for this project. These dependencies are required to run the application:</p>
-<table class="bodyTable"><tr class="b"><th>GroupId</th>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
 <th>ArtifactId</th>
 <th>Version</th>
 <th>Classifier</th>
 <th>Type</th>
 </tr>
-<tr class="a"><td>com.hp.hpl.jena</td>
+<tr class="b"><td>com.hp.hpl.jena</td>
 <td><a href="http://jena.sf.net/iri" class="externalLink">iri</a></td>
 <td>0.8</td>
 <td>sources</td>
 <td>jar</td>
 </tr>
-<tr class="b"><td>log4j</td>
+<tr class="a"><td>log4j</td>
 <td><a href="http://logging.apache.org/log4j/docs/" class="externalLink">log4j</a></td>
 <td>1.2.13</td>
 <td>-</td>
 <td>jar</td>
 </tr>
-<tr class="a"><td>org.slf4j</td>
+<tr class="b"><td>org.slf4j</td>
 <td><a href="http://www.slf4j.org" class="externalLink">slf4j-log4j12</a></td>
 <td>1.5.8</td>
 <td>-</td>
@@ -345,35 +340,35 @@
       }
 </script>
 <div class="section"><h3>Dependency Tree</h3>
-<ul><li>com.clarkparsia:scala-ps-rdf:jar:0.1-RC1 <img id="_793838686" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_483036506', '_793838686' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_483036506" style="display:none"><table class="bodyTable"><tr class="b"><th>PelletServer Scala API for RDF/XML</th>
+<ul><li>com.clarkparsia:scala-ps-rdf:jar:0.1-RC2-SNAPSHOT <img id="_871879108" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1017260894', '_871879108' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1017260894" style="display:none"><table class="bodyTable"><tr class="a"><th>PelletServer Scala API for RDF/XML</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>Implements RDF/XML parser using Jena</p>
+<tr class="b"><td><p><b>Description: </b>Implements RDF/XML parser using Jena</p>
 <p><b>URL: </b><a href="http://clarkparsia.github.com/PelletServerScalaClient/scala-ps-rdf" class="externalLink">http://clarkparsia.github.com/PelletServerScalaClient/scala-ps-rdf</a></p>
-<p><b>Project License: </b>No project license is defined for this project.</p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
 </td>
 </tr>
 </table>
-</div><ul><li>org.scala-lang:scala-library:jar:2.8.0 (compile) <img id="_1980550660" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_430387742', '_1980550660' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_430387742" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - org.scala-lang:scala-library:jar:2.8.0</th>
+</div><ul><li>org.scala-lang:scala-library:jar:2.8.0 (compile) <img id="_1840602494" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_902120717', '_1840602494' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_902120717" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.scala-lang:scala-library:jar:2.8.0</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
 <p><b>URL: </b><a href="http://www.scala-lang.org/" class="externalLink">http://www.scala-lang.org/</a></p>
 <p><b>Project License: </b><a href="http://www.scala-lang.org/downloads/license.html" class="externalLink">BSD-like</a></p>
 </td>
 </tr>
 </table>
 </div></li>
-<li>junit:junit:jar:4.8.1 (test) <img id="_460885885" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_307883429', '_460885885' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_307883429" style="display:none"><table class="bodyTable"><tr class="b"><th>JUnit</th>
+<li>junit:junit:jar:4.8.1 (test) <img id="_435810650" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1691048473', '_435810650' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1691048473" style="display:none"><table class="bodyTable"><tr class="a"><th>JUnit</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.</p>
+<tr class="b"><td><p><b>Description: </b>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.</p>
 <p><b>URL: </b><a href="http://junit.org" class="externalLink">http://junit.org</a></p>
 <p><b>Project License: </b><a href="http://www.opensource.org/licenses/cpl1.0.txt" class="externalLink">Common Public License Version 1.0</a></p>
 </td>
 </tr>
 </table>
 </div></li>
-<li>org.scala-tools.testing:specs_2.8.0:jar:1.6.5 (test) <img id="_2082818572" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_161151717', '_2082818572' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_161151717" style="display:none"><table class="bodyTable"><tr class="b"><th>specs_2.8.0</th>
+<li>org.scala-tools.testing:specs_2.8.0:jar:1.6.5 (test) <img id="_1720398144" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_463964447', '_1720398144' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_463964447" style="display:none"><table class="bodyTable"><tr class="a"><th>specs_2.8.0</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>specs is a Behaviour-Driven-Design
+<tr class="b"><td><p><b>Description: </b>specs is a Behaviour-Driven-Design
   framework</p>
 <p><b>URL: </b><a href="http://code.google.com/p/specs/" class="externalLink">http://code.google.com/p/specs/</a></p>
 <p><b>Project License: </b><a href="http://www.opensource.org/licenses/mit-license.php" class="externalLink">MIT License</a></p>
@@ -381,103 +376,50 @@
 </tr>
 </table>
 </div></li>
-<li>com.clarkparsia:scala-ps-api:jar:0.1-RC1 (compile) <img id="_1842391466" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_536053165', '_1842391466' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_536053165" style="display:none"><table class="bodyTable"><tr class="b"><th>PelletServer Scala API core</th>
+<li>com.clarkparsia:scala-ps-api:jar:0.1-RC2-SNAPSHOT (compile) <img id="_1537504097" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_246275874', '_1537504097' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_246275874" style="display:none"><table class="bodyTable"><tr class="a"><th>PelletServer Scala API core</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>Implements all PelletServer knowledgebase methods.  Implements all result formats apart from parsing RDF/XML.</p>
+<tr class="b"><td><p><b>Description: </b>Implements all PelletServer knowledgebase methods.  Implements all result formats apart from parsing RDF/XML.</p>
 <p><b>URL: </b><a href="http://clarkparsia.github.com/PelletServerScalaClient/scala-ps-api" class="externalLink">http://clarkparsia.github.com/PelletServerScalaClient/scala-ps-api</a></p>
-<p><b>Project License: </b>No project license is defined for this project.</p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
 </td>
 </tr>
 </table>
-</div><ul><li>org.scala-lang:scala-library:jar:2.8.0 (compile) <img id="_405652762" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_177270253', '_405652762' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_177270253" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - org.scala-lang:scala-library:jar:2.8.0</th>
+</div><ul><li>org.scala-lang:scala-library:jar:2.8.0 (compile) <img id="_577487402" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_639628368', '_577487402' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_639628368" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.scala-lang:scala-library:jar:2.8.0</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
 <p><b>URL: </b><a href="http://www.scala-lang.org/" class="externalLink">http://www.scala-lang.org/</a></p>
 <p><b>Project License: </b><a href="http://www.scala-lang.org/downloads/license.html" class="externalLink">BSD-like</a></p>
 </td>
 </tr>
 </table>
 </div></li>
-<li>net.databinder:dispatch-lift-json_2.8.0:jar:0.7.4 (compile) <img id="_334789600" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_823825940', '_334789600' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_823825940" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - net.databinder:dispatch-lift-json_2.8.0:jar:0.7.4</th>
+<li>net.databinder:dispatch-http_2.8.0:jar:0.7.4 (compile) <img id="_680550041" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_574593638', '_680550041' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_574593638" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - net.databinder:dispatch-http_2.8.0:jar:0.7.4</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
 <p><b>Project License: </b>No project license is defined for this project.</p>
 </td>
 </tr>
 </table>
-</div><ul><li>net.liftweb:lift-json_2.8.0:jar:2.0-M5 (compile) <img id="_657406562" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_359681929', '_657406562' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_359681929" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - net.liftweb:lift-json_2.8.0:jar:2.0-M5</th>
+</div><ul><li>org.apache.httpcomponents:httpclient:jar:4.0.1 (compile) <img id="_2094567793" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1133126035', '_2094567793' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1133126035" style="display:none"><table class="bodyTable"><tr class="a"><th>HttpClient</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
-<p><b>Project License: </b>No project license is defined for this project.</p>
-</td>
-</tr>
-</table>
-</div><ul><li>com.thoughtworks.paranamer:paranamer:jar:2.0 (compile) <img id="_662040514" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1766536903', '_662040514' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1766536903" style="display:none"><table class="bodyTable"><tr class="b"><th>ParaNamer Core</th>
-</tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
-<p><b>URL: </b><a href="http://paranamer.codehaus.org/paranamer" class="externalLink">http://paranamer.codehaus.org/paranamer</a></p>
-<p><b>Project License: </b><a href="#LICENSE.txt">Public Domain</a></p>
-</td>
-</tr>
-</table>
-</div></li>
-<li>org.scala-lang:scala-library:jar:2.8.0 (compile) <img id="_1819981614" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_988875482', '_1819981614' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_988875482" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - org.scala-lang:scala-library:jar:2.8.0</th>
-</tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
-<p><b>URL: </b><a href="http://www.scala-lang.org/" class="externalLink">http://www.scala-lang.org/</a></p>
-<p><b>Project License: </b><a href="http://www.scala-lang.org/downloads/license.html" class="externalLink">BSD-like</a></p>
-</td>
-</tr>
-</table>
-</div></li>
-</ul>
-</li>
-<li>net.databinder:dispatch-http_2.8.0:jar:0.7.4 (compile) <img id="_1175263067" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1294687996', '_1175263067' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1294687996" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - net.databinder:dispatch-http_2.8.0:jar:0.7.4</th>
-</tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
-<p><b>Project License: </b>No project license is defined for this project.</p>
-</td>
-</tr>
-</table>
-</div></li>
-<li>org.scala-lang:scala-library:jar:2.8.0 (compile) <img id="_1390550039" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1977709336', '_1390550039' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1977709336" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - org.scala-lang:scala-library:jar:2.8.0</th>
-</tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
-<p><b>URL: </b><a href="http://www.scala-lang.org/" class="externalLink">http://www.scala-lang.org/</a></p>
-<p><b>Project License: </b><a href="http://www.scala-lang.org/downloads/license.html" class="externalLink">BSD-like</a></p>
-</td>
-</tr>
-</table>
-</div></li>
-</ul>
-</li>
-<li>net.databinder:dispatch-http_2.8.0:jar:0.7.4 (compile) <img id="_1652384137" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2119827837', '_1652384137' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2119827837" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - net.databinder:dispatch-http_2.8.0:jar:0.7.4</th>
-</tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
-<p><b>Project License: </b>No project license is defined for this project.</p>
-</td>
-</tr>
-</table>
-</div><ul><li>org.apache.httpcomponents:httpclient:jar:4.0.1 (compile) <img id="_1239189159" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_6538945', '_1239189159' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_6538945" style="display:none"><table class="bodyTable"><tr class="b"><th>HttpClient</th>
-</tr>
-<tr class="a"><td><p><b>Description: </b>HttpComponents Client (base module)</p>
+<tr class="b"><td><p><b>Description: </b>HttpComponents Client (base module)</p>
 <p><b>URL: </b><a href="http://hc.apache.org/httpcomponents-client" class="externalLink">http://hc.apache.org/httpcomponents-client</a></p>
 <p><b>Project License: </b><a href="../LICENSE.txt">Apache License</a></p>
 </td>
 </tr>
 </table>
-</div><ul><li>org.apache.httpcomponents:httpcore:jar:4.0.1 (compile) <img id="_925042642" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_756804230', '_925042642' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_756804230" style="display:none"><table class="bodyTable"><tr class="b"><th>HttpCore</th>
+</div><ul><li>org.apache.httpcomponents:httpcore:jar:4.0.1 (compile) <img id="_1263190048" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_814680515', '_1263190048' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_814680515" style="display:none"><table class="bodyTable"><tr class="a"><th>HttpCore</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>HttpComponents Core (Java 1.3 compatible)</p>
+<tr class="b"><td><p><b>Description: </b>HttpComponents Core (Java 1.3 compatible)</p>
 <p><b>URL: </b><a href="http://hc.apache.org/httpcomponents-core/" class="externalLink">http://hc.apache.org/httpcomponents-core/</a></p>
 <p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.html" class="externalLink">Apache License</a></p>
 </td>
 </tr>
 </table>
 </div></li>
-<li>commons-logging:commons-logging:jar:1.1.1 (compile) <img id="_2022153721" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_11791470', '_2022153721' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_11791470" style="display:none"><table class="bodyTable"><tr class="b"><th>Commons Logging</th>
+<li>commons-logging:commons-logging:jar:1.1.1 (compile) <img id="_540312058" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_53117631', '_540312058' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_53117631" style="display:none"><table class="bodyTable"><tr class="a"><th>Commons Logging</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>Commons Logging is a thin adapter allowing configurable bridging to other,
+<tr class="b"><td><p><b>Description: </b>Commons Logging is a thin adapter allowing configurable bridging to other,
     well known logging systems.</p>
 <p><b>URL: </b><a href="http://commons.apache.org/logging" class="externalLink">http://commons.apache.org/logging</a></p>
 <p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
@@ -485,9 +427,9 @@
 </tr>
 </table>
 </div></li>
-<li>commons-codec:commons-codec:jar:1.3 (compile) <img id="_305501928" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1065396146', '_305501928' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1065396146" style="display:none"><table class="bodyTable"><tr class="b"><th>Codec</th>
+<li>commons-codec:commons-codec:jar:1.3 (compile) <img id="_2080468642" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1136716572', '_2080468642' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1136716572" style="display:none"><table class="bodyTable"><tr class="a"><th>Codec</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>The codec package contains simple encoder and decoders for
+<tr class="b"><td><p><b>Description: </b>The codec package contains simple encoder and decoders for
    various formats such as Base64 and Hexadecimal.  In addition to these
    widely used encoders and decoders, the codec package also maintains a
    collection of phonetic encoding utilities.</p>
@@ -499,16 +441,16 @@
 </div></li>
 </ul>
 </li>
-<li>net.databinder:dispatch-futures_2.8.0:jar:0.7.4 (compile) <img id="_553927173" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1399200360', '_553927173' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1399200360" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - net.databinder:dispatch-futures_2.8.0:jar:0.7.4</th>
+<li>net.databinder:dispatch-futures_2.8.0:jar:0.7.4 (compile) <img id="_162255276" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_376039651', '_162255276' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_376039651" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - net.databinder:dispatch-futures_2.8.0:jar:0.7.4</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
 <p><b>Project License: </b>No project license is defined for this project.</p>
 </td>
 </tr>
 </table>
-</div><ul><li>org.scala-lang:scala-library:jar:2.8.0 (compile) <img id="_1307307600" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_617821138', '_1307307600' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_617821138" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - org.scala-lang:scala-library:jar:2.8.0</th>
+</div><ul><li>org.scala-lang:scala-library:jar:2.8.0 (compile) <img id="_1895484096" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1124067293', '_1895484096' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1124067293" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.scala-lang:scala-library:jar:2.8.0</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
 <p><b>URL: </b><a href="http://www.scala-lang.org/" class="externalLink">http://www.scala-lang.org/</a></p>
 <p><b>Project License: </b><a href="http://www.scala-lang.org/downloads/license.html" class="externalLink">BSD-like</a></p>
 </td>
@@ -517,9 +459,9 @@
 </div></li>
 </ul>
 </li>
-<li>org.scala-lang:scala-library:jar:2.8.0 (compile) <img id="_2013765298" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1540956432', '_2013765298' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1540956432" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - org.scala-lang:scala-library:jar:2.8.0</th>
+<li>org.scala-lang:scala-library:jar:2.8.0 (compile) <img id="_1221714450" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_245650436', '_1221714450' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_245650436" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.scala-lang:scala-library:jar:2.8.0</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
 <p><b>URL: </b><a href="http://www.scala-lang.org/" class="externalLink">http://www.scala-lang.org/</a></p>
 <p><b>Project License: </b><a href="http://www.scala-lang.org/downloads/license.html" class="externalLink">BSD-like</a></p>
 </td>
@@ -528,18 +470,18 @@
 </div></li>
 </ul>
 </li>
-<li>org.apache.httpcomponents:httpcore:jar:4.0.1 (compile) <img id="_1920123728" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_227205354', '_1920123728' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_227205354" style="display:none"><table class="bodyTable"><tr class="b"><th>HttpCore</th>
+<li>org.apache.httpcomponents:httpcore:jar:4.0.1 (compile) <img id="_745855040" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1369178296', '_745855040' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1369178296" style="display:none"><table class="bodyTable"><tr class="a"><th>HttpCore</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>HttpComponents Core (Java 1.3 compatible)</p>
+<tr class="b"><td><p><b>Description: </b>HttpComponents Core (Java 1.3 compatible)</p>
 <p><b>URL: </b><a href="http://hc.apache.org/httpcomponents-core/" class="externalLink">http://hc.apache.org/httpcomponents-core/</a></p>
 <p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.html" class="externalLink">Apache License</a></p>
 </td>
 </tr>
 </table>
 </div></li>
-<li>commons-logging:commons-logging:jar:1.1.1 (compile) <img id="_1552394434" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_114490550', '_1552394434' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_114490550" style="display:none"><table class="bodyTable"><tr class="b"><th>Commons Logging</th>
+<li>commons-logging:commons-logging:jar:1.1.1 (compile) <img id="_826560119" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_445418805', '_826560119' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_445418805" style="display:none"><table class="bodyTable"><tr class="a"><th>Commons Logging</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>Commons Logging is a thin adapter allowing configurable bridging to other,
+<tr class="b"><td><p><b>Description: </b>Commons Logging is a thin adapter allowing configurable bridging to other,
     well known logging systems.</p>
 <p><b>URL: </b><a href="http://commons.apache.org/logging" class="externalLink">http://commons.apache.org/logging</a></p>
 <p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
@@ -547,27 +489,80 @@
 </tr>
 </table>
 </div></li>
+<li>net.databinder:dispatch-http-json_2.8.0:jar:0.7.4 (compile) <img id="_944071238" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_964667929', '_944071238' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_964667929" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - net.databinder:dispatch-http-json_2.8.0:jar:0.7.4</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.apache.httpcomponents:httpclient:jar:4.0.1 (compile) <img id="_1541367660" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1014614415', '_1541367660' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1014614415" style="display:none"><table class="bodyTable"><tr class="a"><th>HttpClient</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>HttpComponents Client (base module)</p>
+<p><b>URL: </b><a href="http://hc.apache.org/httpcomponents-client" class="externalLink">http://hc.apache.org/httpcomponents-client</a></p>
+<p><b>Project License: </b><a href="../LICENSE.txt">Apache License</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>net.databinder:dispatch-http_2.8.0:jar:0.7.4 (compile) <img id="_1426630798" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_786835362', '_1426630798' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_786835362" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - net.databinder:dispatch-http_2.8.0:jar:0.7.4</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>net.databinder:dispatch-json_2.8.0:jar:0.7.4 (compile) <img id="_113072925" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1343778520', '_113072925' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1343778520" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - net.databinder:dispatch-json_2.8.0:jar:0.7.4</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.scala-lang:scala-library:jar:2.8.0 (compile) <img id="_106111387" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_564874896', '_106111387' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_564874896" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.scala-lang:scala-library:jar:2.8.0</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="http://www.scala-lang.org/" class="externalLink">http://www.scala-lang.org/</a></p>
+<p><b>Project License: </b><a href="http://www.scala-lang.org/downloads/license.html" class="externalLink">BSD-like</a></p>
+</td>
+</tr>
+</table>
+</div></li>
 </ul>
 </li>
-<li>com.hp.hpl.jena:jena:jar:2.6.3 (compile) <img id="_1684377610" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1542265342', '_1684377610' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1542265342" style="display:none"><table class="bodyTable"><tr class="b"><th>Jena</th>
+<li>org.scala-lang:scala-library:jar:2.8.0 (compile) <img id="_1979937300" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_474624642', '_1979937300' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_474624642" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - org.scala-lang:scala-library:jar:2.8.0</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>Jena is a Java framework for building Semantic Web applications. It provides a programmatic environment for RDF, RDFS and OWL, SPARQL and includes a rule-based inference engine.</p>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="http://www.scala-lang.org/" class="externalLink">http://www.scala-lang.org/</a></p>
+<p><b>Project License: </b><a href="http://www.scala-lang.org/downloads/license.html" class="externalLink">BSD-like</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>com.hp.hpl.jena:jena:jar:2.6.3 (compile) <img id="_1383735517" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1163436536', '_1383735517' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1163436536" style="display:none"><table class="bodyTable"><tr class="a"><th>Jena</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Jena is a Java framework for building Semantic Web applications. It provides a programmatic environment for RDF, RDFS and OWL, SPARQL and includes a rule-based inference engine.</p>
 <p><b>URL: </b><a href="http://www.openjena.org/" class="externalLink">http://www.openjena.org/</a></p>
 <p><b>Project License: </b><a href="http://jena.sourceforge.net/license.html" class="externalLink">BSD</a></p>
 </td>
 </tr>
 </table>
-</div><ul><li>com.hp.hpl.jena:iri:jar:0.8 (compile) <img id="_2077968205" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1964948416', '_2077968205' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1964948416" style="display:none"><table class="bodyTable"><tr class="b"><th>Jena IRI</th>
+</div><ul><li>com.hp.hpl.jena:iri:jar:0.8 (compile) <img id="_1950971371" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1719343324', '_1950971371' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1719343324" style="display:none"><table class="bodyTable"><tr class="a"><th>Jena IRI</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
 <p><b>URL: </b><a href="http://jena.sf.net/iri" class="externalLink">http://jena.sf.net/iri</a></p>
 <p><b>Project License: </b><a href="http://jena.sourceforge.net/iri/license.html" class="externalLink">BSD-style license</a></p>
 </td>
 </tr>
 </table>
-</div><ul><li>com.ibm.icu:icu4j:jar:3.4.4 (compile) <img id="_1284579608" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1645387464', '_1284579608' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1645387464" style="display:none"><table class="bodyTable"><tr class="b"><th>ICU4J</th>
+</div><ul><li>com.ibm.icu:icu4j:jar:3.4.4 (compile) <img id="_141663626" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_524703949', '_141663626' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_524703949" style="display:none"><table class="bodyTable"><tr class="a"><th>ICU4J</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>The International Component for Unicode (ICU) is a mature,
+<tr class="b"><td><p><b>Description: </b>The International Component for Unicode (ICU) is a mature,
         portable set of C/C++ and Java libraries for Unicode support, software
         internationalization (I18N) and globalization (G11N), giving
         applications the same results on all platforms.</p>
@@ -579,17 +574,17 @@
 </div></li>
 </ul>
 </li>
-<li>com.hp.hpl.jena:iri:jar:sources:0.8 (runtime) <img id="_1375451943" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_770885331', '_1375451943' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_770885331" style="display:none"><table class="bodyTable"><tr class="b"><th>Jena IRI</th>
+<li>com.hp.hpl.jena:iri:jar:sources:0.8 (runtime) <img id="_1911326821" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1352489177', '_1911326821' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1352489177" style="display:none"><table class="bodyTable"><tr class="a"><th>Jena IRI</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
 <p><b>URL: </b><a href="http://jena.sf.net/iri" class="externalLink">http://jena.sf.net/iri</a></p>
 <p><b>Project License: </b><a href="http://jena.sourceforge.net/iri/license.html" class="externalLink">BSD-style license</a></p>
 </td>
 </tr>
 </table>
-</div><ul><li>com.ibm.icu:icu4j:jar:3.4.4 (runtime) <img id="_238165850" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2079511938', '_238165850' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2079511938" style="display:none"><table class="bodyTable"><tr class="b"><th>ICU4J</th>
+</div><ul><li>com.ibm.icu:icu4j:jar:3.4.4 (runtime) <img id="_226519929" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_182993546', '_226519929' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_182993546" style="display:none"><table class="bodyTable"><tr class="a"><th>ICU4J</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>The International Component for Unicode (ICU) is a mature,
+<tr class="b"><td><p><b>Description: </b>The International Component for Unicode (ICU) is a mature,
         portable set of C/C++ and Java libraries for Unicode support, software
         internationalization (I18N) and globalization (G11N), giving
         applications the same results on all platforms.</p>
@@ -601,9 +596,9 @@
 </div></li>
 </ul>
 </li>
-<li>com.ibm.icu:icu4j:jar:3.4.4 (compile) <img id="_1817084275" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1772977564', '_1817084275' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1772977564" style="display:none"><table class="bodyTable"><tr class="b"><th>ICU4J</th>
+<li>com.ibm.icu:icu4j:jar:3.4.4 (compile) <img id="_561169474" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_151843512', '_561169474' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_151843512" style="display:none"><table class="bodyTable"><tr class="a"><th>ICU4J</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>The International Component for Unicode (ICU) is a mature,
+<tr class="b"><td><p><b>Description: </b>The International Component for Unicode (ICU) is a mature,
         portable set of C/C++ and Java libraries for Unicode support, software
         internationalization (I18N) and globalization (G11N), giving
         applications the same results on all platforms.</p>
@@ -613,34 +608,34 @@
 </tr>
 </table>
 </div></li>
-<li>xerces:xercesImpl:jar:2.7.1 (compile) <img id="_835557288" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_458805543', '_835557288' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_458805543" style="display:none"><table class="bodyTable"><tr class="b"><th>Unnamed - xerces:xercesImpl:jar:2.7.1</th>
+<li>xerces:xercesImpl:jar:2.7.1 (compile) <img id="_42228108" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1587037911', '_42228108' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1587037911" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - xerces:xercesImpl:jar:2.7.1</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
 <p><b>Project License: </b>No project license is defined for this project.</p>
 </td>
 </tr>
 </table>
 </div></li>
-<li>org.slf4j:slf4j-api:jar:1.5.8 (compile) <img id="_527386719" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1399182965', '_527386719' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1399182965" style="display:none"><table class="bodyTable"><tr class="b"><th>SLF4J API Module</th>
+<li>org.slf4j:slf4j-api:jar:1.5.8 (compile) <img id="_1703358331" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_677507025', '_1703358331' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_677507025" style="display:none"><table class="bodyTable"><tr class="a"><th>SLF4J API Module</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>The slf4j API</p>
+<tr class="b"><td><p><b>Description: </b>The slf4j API</p>
 <p><b>URL: </b><a href="http://www.slf4j.org" class="externalLink">http://www.slf4j.org</a></p>
 <p><b>Project License: </b>No project license is defined for this project.</p>
 </td>
 </tr>
 </table>
 </div></li>
-<li>org.slf4j:slf4j-log4j12:jar:1.5.8 (runtime) <img id="_1513107691" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1440399961', '_1513107691' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1440399961" style="display:none"><table class="bodyTable"><tr class="b"><th>SLF4J LOG4J-12 Binding</th>
+<li>org.slf4j:slf4j-log4j12:jar:1.5.8 (runtime) <img id="_1958609823" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1892974142', '_1958609823' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1892974142" style="display:none"><table class="bodyTable"><tr class="a"><th>SLF4J LOG4J-12 Binding</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>The slf4j log4j-12 binding</p>
+<tr class="b"><td><p><b>Description: </b>The slf4j log4j-12 binding</p>
 <p><b>URL: </b><a href="http://www.slf4j.org" class="externalLink">http://www.slf4j.org</a></p>
 <p><b>Project License: </b>No project license is defined for this project.</p>
 </td>
 </tr>
 </table>
-</div><ul><li>org.slf4j:slf4j-api:jar:1.5.8 (runtime) <img id="_1319005943" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_590576003', '_1319005943' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_590576003" style="display:none"><table class="bodyTable"><tr class="b"><th>SLF4J API Module</th>
+</div><ul><li>org.slf4j:slf4j-api:jar:1.5.8 (runtime) <img id="_643735775" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1899009498', '_643735775' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1899009498" style="display:none"><table class="bodyTable"><tr class="a"><th>SLF4J API Module</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>The slf4j API</p>
+<tr class="b"><td><p><b>Description: </b>The slf4j API</p>
 <p><b>URL: </b><a href="http://www.slf4j.org" class="externalLink">http://www.slf4j.org</a></p>
 <p><b>Project License: </b>No project license is defined for this project.</p>
 </td>
@@ -649,9 +644,9 @@
 </div></li>
 </ul>
 </li>
-<li>log4j:log4j:jar:1.2.13 (runtime) <img id="_871589261" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1123256945', '_871589261' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1123256945" style="display:none"><table class="bodyTable"><tr class="b"><th>Log4j</th>
+<li>log4j:log4j:jar:1.2.13 (runtime) <img id="_982532150" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_822581241', '_982532150' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_822581241" style="display:none"><table class="bodyTable"><tr class="a"><th>Log4j</th>
 </tr>
-<tr class="a"><td><p><b>Description: </b>Log4j</p>
+<tr class="b"><td><p><b>Description: </b>Log4j</p>
 <p><b>URL: </b><a href="http://logging.apache.org/log4j/docs/" class="externalLink">http://logging.apache.org/log4j/docs/</a></p>
 <p><b>Project License: </b>No project license is defined for this project.</p>
 </td>
@@ -667,18 +662,17 @@
 </div>
 <div class="section"><h2>Licenses</h2>
 <p><b>ICU License: </b>ICU4J</p>
-<p><b>Public Domain: </b>ParaNamer Core</p>
-<p><b>Unknown: </b>Log4j, PelletServer Scala API core, PelletServer Scala API for RDF/XML, SLF4J API Module, SLF4J LOG4J-12 Binding, Unnamed - net.databinder:dispatch-futures_2.8.0:jar:0.7.4, Unnamed - net.databinder:dispatch-http_2.8.0:jar:0.7.4, Unnamed - net.databinder:dispatch-lift-json_2.8.0:jar:0.7.4, Unnamed - net.liftweb:lift-json_2.8.0:jar:2.0-M5, Unnamed - xerces:xercesImpl:jar:2.7.1</p>
+<p><b>Unknown: </b>Log4j, SLF4J API Module, SLF4J LOG4J-12 Binding, Unnamed - net.databinder:dispatch-futures_2.8.0:jar:0.7.4, Unnamed - net.databinder:dispatch-http-json_2.8.0:jar:0.7.4, Unnamed - net.databinder:dispatch-http_2.8.0:jar:0.7.4, Unnamed - net.databinder:dispatch-json_2.8.0:jar:0.7.4, Unnamed - xerces:xercesImpl:jar:2.7.1</p>
 <p><b>BSD-style license: </b>Jena IRI</p>
 <p><b>BSD: </b>Jena</p>
 <p><b>Apache License: </b>HttpClient, HttpCore</p>
 <p><b>Common Public License Version 1.0: </b>JUnit</p>
-<p><b>The Apache Software License, Version 2.0: </b>Codec, Commons Logging</p>
 <p><b>MIT License: </b>specs_2.8.0</p>
+<p><b>The Apache Software License, Version 2.0: </b>Codec, Commons Logging, PelletServer Scala API core, PelletServer Scala API for RDF/XML</p>
 <p><b>BSD-like: </b>Unnamed - org.scala-lang:scala-library:jar:2.8.0</p>
 </div>
 <div class="section"><h2>Dependency File Details</h2>
-<table class="bodyTable"><tbody><tr class="b"><th align="left">Filename</th>
+<table class="bodyTable"><tbody><tr class="a"><th align="left">Filename</th>
 <th align="right">Size</th>
 <th align="right">Entries</th>
 <th align="right">Classes</th>
@@ -686,21 +680,13 @@
 <th align="center">JDK Rev</th>
 <th align="center">Debug</th>
 </tr>
-<tr class="a"><td align="left">scala-ps-api-0.1-RC1.jar</td>
-<td align="right">127.84 kB</td>
-<td align="right">124</td>
-<td align="right">111</td>
-<td align="right">3</td>
+<tr class="b"><td align="left">scala-ps-api-0.1-RC2-SNAPSHOT.jar</td>
+<td align="right">131.34 kB</td>
+<td align="right">130</td>
+<td align="right">114</td>
+<td align="right">6</td>
 <td align="center">1.5</td>
 <td align="center">debug</td>
-</tr>
-<tr class="b"><td align="left">iri-0.8-sources.jar</td>
-<td align="right">206.02 kB</td>
-<td align="right">70</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="center">-</td>
-<td align="center">release</td>
 </tr>
 <tr class="a"><td align="left">iri-0.8-sources.jar</td>
 <td align="right">206.02 kB</td>
@@ -710,7 +696,15 @@
 <td align="center">-</td>
 <td align="center">release</td>
 </tr>
-<tr class="b"><td align="left">jena-2.6.3.jar</td>
+<tr class="b"><td align="left">iri-0.8-sources.jar</td>
+<td align="right">206.02 kB</td>
+<td align="right">70</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="center">-</td>
+<td align="center">release</td>
+</tr>
+<tr class="a"><td align="left">jena-2.6.3.jar</td>
 <td align="right">1.81 MB</td>
 <td align="right">1,503</td>
 <td align="right">1,392</td>
@@ -718,20 +712,12 @@
 <td align="center">1.5</td>
 <td align="center">debug</td>
 </tr>
-<tr class="a"><td align="left">icu4j-3.4.4.jar</td>
+<tr class="b"><td align="left">icu4j-3.4.4.jar</td>
 <td align="right">3.08 MB</td>
 <td align="right">1,073</td>
 <td align="right">525</td>
 <td align="right">6</td>
 <td align="center">1.3</td>
-<td align="center">debug</td>
-</tr>
-<tr class="b"><td align="left">paranamer-2.0.jar</td>
-<td align="right">26.38 kB</td>
-<td align="right">23</td>
-<td align="right">13</td>
-<td align="right">1</td>
-<td align="center">1.4</td>
 <td align="center">debug</td>
 </tr>
 <tr class="a"><td align="left">commons-codec-1.3.jar</td>
@@ -774,7 +760,15 @@
 <td align="center">1.5</td>
 <td align="center">debug</td>
 </tr>
-<tr class="b"><td align="left">dispatch-http_2.8.0-0.7.4.jar</td>
+<tr class="b"><td align="left">dispatch-http-json_2.8.0-0.7.4.jar</td>
+<td align="right">4.83 kB</td>
+<td align="right">6</td>
+<td align="right">5</td>
+<td align="right">1</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">dispatch-http_2.8.0-0.7.4.jar</td>
 <td align="right">92.72 kB</td>
 <td align="right">84</td>
 <td align="right">83</td>
@@ -782,18 +776,10 @@
 <td align="center">1.5</td>
 <td align="center">debug</td>
 </tr>
-<tr class="a"><td align="left">dispatch-lift-json_2.8.0-0.7.4.jar</td>
-<td align="right">23.52 kB</td>
-<td align="right">24</td>
-<td align="right">23</td>
-<td align="right">1</td>
-<td align="center">1.5</td>
-<td align="center">debug</td>
-</tr>
-<tr class="b"><td align="left">lift-json_2.8.0-2.0-M5.jar</td>
-<td align="right">294.07 kB</td>
-<td align="right">242</td>
-<td align="right">241</td>
+<tr class="b"><td align="left">dispatch-json_2.8.0-0.7.4.jar</td>
+<td align="right">90.52 kB</td>
+<td align="right">78</td>
+<td align="right">77</td>
 <td align="right">1</td>
 <td align="center">1.5</td>
 <td align="center">debug</td>
@@ -862,21 +848,21 @@
 <th align="center">JDK Rev</th>
 <th align="center">Debug</th>
 </tr>
-<tr class="a"><td align="right">21</td>
-<td align="right">16.75 MB</td>
-<td align="right">11,866</td>
-<td align="right">10,692</td>
-<td align="right">263</td>
+<tr class="a"><td align="right">20</td>
+<td align="right">16.51 MB</td>
+<td align="right">11,667</td>
+<td align="right">10,500</td>
+<td align="right">265</td>
 <td align="center">1.5</td>
-<td align="right">18</td>
+<td align="right">17</td>
 </tr>
-<tr class="b"><td align="right">compile: 16</td>
-<td align="right">compile: 13.25 MB</td>
-<td align="right">compile: 8,856</td>
-<td align="right">compile: 7,873</td>
-<td align="right">compile: 196</td>
+<tr class="b"><td align="right">compile: 15</td>
+<td align="right">compile: 13.01 MB</td>
+<td align="right">compile: 8,657</td>
+<td align="right">compile: 7,681</td>
+<td align="right">compile: 198</td>
 <td align="center">-</td>
-<td align="right">compile: 14</td>
+<td align="right">compile: 13</td>
 </tr>
 <tr class="a"><td align="right">test: 2</td>
 <td align="right">test: 2.95 MB</td>
@@ -903,62 +889,57 @@
 <th align="center">Release</th>
 <th align="center">Snapshot</th>
 </tr>
-<tr class="b"><td align="left">databindernetrepository</td>
-<td align="left"><a href="http://databinder.net/repo/" class="externalLink">http://databinder.net/repo/</a></td>
-<td align="center">Yes</td>
-<td align="center">Yes</td>
-</tr>
-<tr class="a"><td align="left">ScalaToolsMaven2Repository</td>
+<tr class="b"><td align="left">ScalaToolsMaven2Repository</td>
 <td align="left"><a href="http://scala-tools.org/repo-releases/" class="externalLink">http://scala-tools.org/repo-releases/</a></td>
 <td align="center">Yes</td>
 <td align="center">Yes</td>
 </tr>
-<tr class="b"><td align="left">scala-tools.org-nexus-snapshots</td>
+<tr class="a"><td align="left">scala-tools.org-nexus-snapshots</td>
 <td align="left"><a href="http://nexus.scala-tools.org/content/repositories/snapshots" class="externalLink">http://nexus.scala-tools.org/content/repositories/snapshots</a></td>
 <td align="center">Yes</td>
 <td align="center">Yes</td>
 </tr>
-<tr class="a"><td align="left">scala-tools.org - snapshots</td>
+<tr class="b"><td align="left">scala-tools.org - snapshots</td>
 <td align="left"><a href="http://scala-tools.org/repo-snapshots" class="externalLink">http://scala-tools.org/repo-snapshots</a></td>
 <td align="center">Yes</td>
 <td align="center">Yes</td>
 </tr>
-<tr class="b"><td align="left">apache.snapshots</td>
+<tr class="a"><td align="left">apache.snapshots</td>
 <td align="left"><a href="http://people.apache.org/repo/m2-snapshot-repository" class="externalLink">http://people.apache.org/repo/m2-snapshot-repository</a></td>
 <td align="center">-</td>
 <td align="center">Yes</td>
 </tr>
-<tr class="a"><td align="left">repo-jena</td>
+<tr class="b"><td align="left">repo-jena</td>
 <td align="left"><a href="http://openjena.org/repo" class="externalLink">http://openjena.org/repo</a></td>
 <td align="center">Yes</td>
 <td align="center">-</td>
 </tr>
-<tr class="b"><td align="left">scala-tools.org</td>
+<tr class="a"><td align="left">scala-tools.org</td>
 <td align="left"><a href="http://scala-tools.org/repo-releases" class="externalLink">http://scala-tools.org/repo-releases</a></td>
 <td align="center">Yes</td>
 <td align="center">Yes</td>
 </tr>
-<tr class="a"><td align="left">scala-tools.org-nexus-releases</td>
+<tr class="b"><td align="left">scala-tools.org-nexus-releases</td>
 <td align="left"><a href="http://nexus.scala-tools.org/content/repositories/releases" class="externalLink">http://nexus.scala-tools.org/content/repositories/releases</a></td>
 <td align="center">Yes</td>
 <td align="center">Yes</td>
 </tr>
-<tr class="b"><td align="left">repo-jena-dev</td>
+<tr class="a"><td align="left">repo-jena-dev</td>
 <td align="left"><a href="http://openjena.org/repo-dev" class="externalLink">http://openjena.org/repo-dev</a></td>
 <td align="center">Yes</td>
 <td align="center">Yes</td>
 </tr>
-<tr class="a"><td align="left">maven2-repository.dev.java.net</td>
+<tr class="b"><td align="left">maven2-repository.dev.java.net</td>
 <td align="left"><a href="http://download.java.net/maven/2/" class="externalLink">http://download.java.net/maven/2/</a></td>
 <td align="center">Yes</td>
 <td align="center">Yes</td>
 </tr>
-<tr class="b"><td align="left">central</td>
+<tr class="a"><td align="left">central</td>
 <td align="left"><a href="http://repo1.maven.org/maven2" class="externalLink">http://repo1.maven.org/maven2</a></td>
 <td align="center">Yes</td>
 <td align="center">-</td>
 </tr>
-<tr class="a"><td align="left">lagnetrepository</td>
+<tr class="b"><td align="left">lagnetrepository</td>
 <td align="left"><a href="http://www.lag.net/repo/" class="externalLink">http://www.lag.net/repo/</a></td>
 <td align="center">Yes</td>
 <td align="center">Yes</td>
@@ -966,8 +947,7 @@
 </tbody>
 </table>
 <p>Repository locations for each of the Dependencies.</p>
-<table class="bodyTable"><tbody><tr class="b"><th align="left">Artifact</th>
-<th align="center">databindernetrepository</th>
+<table class="bodyTable"><tbody><tr class="a"><th align="left">Artifact</th>
 <th align="center">ScalaToolsMaven2Repository</th>
 <th align="center">scala-tools.org-nexus-snapshots</th>
 <th align="center">scala-tools.org - snapshots</th>
@@ -980,8 +960,7 @@
 <th align="center">central</th>
 <th align="center">lagnetrepository</th>
 </tr>
-<tr class="a"><td align="left">com.clarkparsia:scala-ps-api:jar:0.1-RC1</td>
-<td align="center">-</td>
+<tr class="b"><td align="left">com.clarkparsia:scala-ps-api:jar:0.1-RC2-SNAPSHOT</td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -994,8 +973,7 @@
 <td align="center">-</td>
 <td align="center">-</td>
 </tr>
-<tr class="b"><td align="left">com.hp.hpl.jena:iri:jar:sources:0.8</td>
-<td align="center">-</td>
+<tr class="a"><td align="left">com.hp.hpl.jena:iri:jar:sources:0.8</td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -1008,8 +986,7 @@
 <td align="center"><a href="http://repo1.maven.org/maven2/com/hp/hpl/jena/iri/0.8/iri-0.8-sources.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="a"><td align="left">com.hp.hpl.jena:iri:jar:0.8</td>
-<td align="center">-</td>
+<tr class="b"><td align="left">com.hp.hpl.jena:iri:jar:0.8</td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -1022,8 +999,7 @@
 <td align="center"><a href="http://repo1.maven.org/maven2/com/hp/hpl/jena/iri/0.8/iri-0.8.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="b"><td align="left">com.hp.hpl.jena:jena:jar:2.6.3</td>
-<td align="center">-</td>
+<tr class="a"><td align="left">com.hp.hpl.jena:jena:jar:2.6.3</td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -1036,8 +1012,7 @@
 <td align="center"><a href="http://repo1.maven.org/maven2/com/hp/hpl/jena/jena/2.6.3/jena-2.6.3.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="a"><td align="left">com.ibm.icu:icu4j:jar:3.4.4</td>
-<td align="center">-</td>
+<tr class="b"><td align="left">com.ibm.icu:icu4j:jar:3.4.4</td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -1050,22 +1025,7 @@
 <td align="center"><a href="http://repo1.maven.org/maven2/com/ibm/icu/icu4j/3.4.4/icu4j-3.4.4.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
-<tr class="b"><td align="left">com.thoughtworks.paranamer:paranamer:jar:2.0</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center"><a href="http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.0/paranamer-2.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
-<td align="center">-</td>
-</tr>
 <tr class="a"><td align="left">commons-codec:commons-codec:jar:1.3</td>
-<td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -1088,12 +1048,10 @@
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
-<td align="center">-</td>
 <td align="center"><a href="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
 <tr class="a"><td align="left">junit:junit:jar:4.8.1</td>
-<td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -1116,12 +1074,10 @@
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
-<td align="center">-</td>
 <td align="center"><a href="http://repo1.maven.org/maven2/log4j/log4j/1.2.13/log4j-1.2.13.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
 <tr class="a"><td align="left">net.databinder:dispatch-futures_2.8.0:jar:0.7.4</td>
-<td align="center">-</td>
 <td align="center"><a href="http://scala-tools.org/repo-releases//net/databinder/dispatch-futures_2.8.0/0.7.4/dispatch-futures_2.8.0-0.7.4.jar" class="externalLink"><img alt="Found at http://scala-tools.org/repo-releases/" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -1134,8 +1090,20 @@
 <td align="center">-</td>
 <td align="center">-</td>
 </tr>
-<tr class="b"><td align="left">net.databinder:dispatch-http_2.8.0:jar:0.7.4</td>
+<tr class="b"><td align="left">net.databinder:dispatch-http-json_2.8.0:jar:0.7.4</td>
+<td align="center"><a href="http://scala-tools.org/repo-releases//net/databinder/dispatch-http-json_2.8.0/0.7.4/dispatch-http-json_2.8.0-0.7.4.jar" class="externalLink"><img alt="Found at http://scala-tools.org/repo-releases/" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center"><a href="http://scala-tools.org/repo-releases/net/databinder/dispatch-http-json_2.8.0/0.7.4/dispatch-http-json_2.8.0-0.7.4.jar" class="externalLink"><img alt="Found at http://scala-tools.org/repo-releases" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://nexus.scala-tools.org/content/repositories/releases/net/databinder/dispatch-http-json_2.8.0/0.7.4/dispatch-http-json_2.8.0-0.7.4.jar" class="externalLink"><img alt="Found at http://nexus.scala-tools.org/content/repositories/releases" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">net.databinder:dispatch-http_2.8.0:jar:0.7.4</td>
 <td align="center"><a href="http://scala-tools.org/repo-releases//net/databinder/dispatch-http_2.8.0/0.7.4/dispatch-http_2.8.0-0.7.4.jar" class="externalLink"><img alt="Found at http://scala-tools.org/repo-releases/" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -1148,36 +1116,20 @@
 <td align="center">-</td>
 <td align="center">-</td>
 </tr>
-<tr class="a"><td align="left">net.databinder:dispatch-lift-json_2.8.0:jar:0.7.4</td>
-<td align="center">-</td>
-<td align="center"><a href="http://scala-tools.org/repo-releases//net/databinder/dispatch-lift-json_2.8.0/0.7.4/dispatch-lift-json_2.8.0-0.7.4.jar" class="externalLink"><img alt="Found at http://scala-tools.org/repo-releases/" src="images/icon_success_sml.gif" /></a></td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center"><a href="http://scala-tools.org/repo-releases/net/databinder/dispatch-lift-json_2.8.0/0.7.4/dispatch-lift-json_2.8.0-0.7.4.jar" class="externalLink"><img alt="Found at http://scala-tools.org/repo-releases" src="images/icon_success_sml.gif" /></a></td>
-<td align="center"><a href="http://nexus.scala-tools.org/content/repositories/releases/net/databinder/dispatch-lift-json_2.8.0/0.7.4/dispatch-lift-json_2.8.0-0.7.4.jar" class="externalLink"><img alt="Found at http://nexus.scala-tools.org/content/repositories/releases" src="images/icon_success_sml.gif" /></a></td>
+<tr class="b"><td align="left">net.databinder:dispatch-json_2.8.0:jar:0.7.4</td>
+<td align="center"><a href="http://scala-tools.org/repo-releases//net/databinder/dispatch-json_2.8.0/0.7.4/dispatch-json_2.8.0-0.7.4.jar" class="externalLink"><img alt="Found at http://scala-tools.org/repo-releases/" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
-</tr>
-<tr class="b"><td align="left">net.liftweb:lift-json_2.8.0:jar:2.0-M5</td>
-<td align="center"><a href="http://databinder.net/repo//net/liftweb/lift-json_2.8.0/2.0-M5/lift-json_2.8.0-2.0-M5.jar" class="externalLink"><img alt="Found at http://databinder.net/repo/" src="images/icon_success_sml.gif" /></a></td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
-<td align="center">-</td>
+<td align="center"><a href="http://scala-tools.org/repo-releases/net/databinder/dispatch-json_2.8.0/0.7.4/dispatch-json_2.8.0-0.7.4.jar" class="externalLink"><img alt="Found at http://scala-tools.org/repo-releases" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://nexus.scala-tools.org/content/repositories/releases/net/databinder/dispatch-json_2.8.0/0.7.4/dispatch-json_2.8.0-0.7.4.jar" class="externalLink"><img alt="Found at http://nexus.scala-tools.org/content/repositories/releases" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
 </tr>
 <tr class="a"><td align="left">org.apache.httpcomponents:httpclient:jar:4.0.1</td>
-<td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -1200,12 +1152,10 @@
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
-<td align="center">-</td>
 <td align="center"><a href="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
 <tr class="a"><td align="left">org.scala-lang:scala-library:jar:2.8.0</td>
-<td align="center">-</td>
 <td align="center"><a href="http://scala-tools.org/repo-releases//org/scala-lang/scala-library/2.8.0/scala-library-2.8.0.jar" class="externalLink"><img alt="Found at http://scala-tools.org/repo-releases/" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -1219,7 +1169,6 @@
 <td align="center">-</td>
 </tr>
 <tr class="b"><td align="left">org.scala-tools.testing:specs_2.8.0:jar:1.6.5</td>
-<td align="center">-</td>
 <td align="center"><a href="http://scala-tools.org/repo-releases//org/scala-tools/testing/specs_2.8.0/1.6.5/specs_2.8.0-1.6.5.jar" class="externalLink"><img alt="Found at http://scala-tools.org/repo-releases/" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -1242,12 +1191,10 @@
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
-<td align="center">-</td>
 <td align="center"><a href="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
 <tr class="b"><td align="left">org.slf4j:slf4j-log4j12:jar:1.5.8</td>
-<td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
@@ -1270,12 +1217,10 @@
 <td align="center">-</td>
 <td align="center">-</td>
 <td align="center">-</td>
-<td align="center">-</td>
 <td align="center"><a href="http://repo1.maven.org/maven2/xerces/xercesImpl/2.7.1/xercesImpl-2.7.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td align="center">-</td>
 </tr>
 <tr class="b"><th align="left">Total</th>
-<th align="center">databindernetrepository</th>
 <th align="center">ScalaToolsMaven2Repository</th>
 <th align="center">scala-tools.org-nexus-snapshots</th>
 <th align="center">scala-tools.org - snapshots</th>
@@ -1288,18 +1233,17 @@
 <th align="center">central</th>
 <th align="center">lagnetrepository</th>
 </tr>
-<tr class="a"><td align="left">21 (compile: 16, test: 2, runtime: 3)</td>
-<td align="center">1</td>
-<td align="center">5</td>
+<tr class="a"><td align="left">20 (compile: 15, test: 2, runtime: 3)</td>
+<td align="center">6</td>
 <td align="center">0</td>
 <td align="center">0</td>
 <td align="center">0</td>
 <td align="center">3</td>
-<td align="center">5</td>
-<td align="center">5</td>
+<td align="center">6</td>
+<td align="center">6</td>
 <td align="center">0</td>
 <td align="center">0</td>
-<td align="center">16</td>
+<td align="center">15</td>
 <td align="center">0</td>
 </tr>
 </tbody>
