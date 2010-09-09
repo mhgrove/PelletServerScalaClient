@@ -14,6 +14,8 @@ import net.liftweb.json.JsonParser.parse
 import net.liftweb.json.JsonAST.{JValue,JField,JString,JObject}
 import java.io.InputStreamReader
 import scala.io.Source
+import javax.xml.datatype.DatatypeFactory
+import java.util.{Date, GregorianCalendar, TimeZone}
 
 object StubGenerator {
 
@@ -107,7 +109,10 @@ object StubGenerator {
 	 **/
   
 	def generateMethods(jsonServiceDescription: URL) {
-		val methods = findMethods(jsonServiceDescription)
+		val connection = jsonServiceDescription.openConnection
+		connection.setRequestProperty("Accept", "text/json")
+		val json = parse(new InputStreamReader(connection.getInputStream))
+		val methods = findMethods(json)
 		val outputDirectory = new File(rootOutputDirectory, METHOD_PACKAGE.replace('.', File.separatorChar))
 		if (!outputDirectory.exists) {
 			outputDirectory.mkdirs
@@ -150,6 +155,18 @@ object StubGenerator {
 			writer.write("\n  }\n")
 		}
 		writer.write("}\n")
+		// Add an object with some static details about provenance
+		val serverInfo = json \ "server-information"
+		val JField(_, JString(sdDate)) = serverInfo \ "description-created"
+		val JField(_, JString(sdVersion)) = serverInfo \ "server-version"
+		val genDate = xmlDate(new Date())
+		writer.write("""
+object SDProvenance {
+    val SD_VERSION = "%s"
+    val SD_DATE = "%s"
+    val GEN_DATE = "%s"
+}
+""".format(sdVersion, sdDate, genDate))
 		writer.close
 	}
   
@@ -178,11 +195,15 @@ object StubGenerator {
 			param
 		}
 	}
+	
+	private def xmlDate(d: Date) = {
+		val dtf = DatatypeFactory.newInstance
+		val gc = new GregorianCalendar(TimeZone.getTimeZone("UTC"))
+		gc.setTime(d)
+		dtf.newXMLGregorianCalendar(gc).toXMLFormat
+	}
 
-	private def findMethods(jsonServiceDescription: URL) = {
-		val connection = jsonServiceDescription.openConnection
-		connection.setRequestProperty("Accept", "text/json")
-		val json = parse(new InputStreamReader(connection.getInputStream))
+	private def findMethods(json: JValue) = {
 		val methods = scala.collection.mutable.Map.empty[String, (List[String], List[String], List[String])]
 		for (JField("knowledge-bases", kbs) <- json;
 			 JField("kb-services", services) <- kbs;

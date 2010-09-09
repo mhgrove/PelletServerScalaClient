@@ -12,6 +12,7 @@ import com.clarkparsia.pelletserver.scala.results.SparqlResult._
 import dispatch.StatusCode
 import com.clarkparsia.pelletserver.scala.api.json.JServiceDescription
 import scala.math.Ordering._
+import dispatch.json.Js._
 
 class FactoryTest extends SpecificationWithJUnit {
 
@@ -28,7 +29,7 @@ class FactoryTest extends SpecificationWithJUnit {
 			val ps = PelletServer("http://ps.clarkparsia.com")
 			// Iterable(String).gt will do string comparison on two lists of strings and should
 			// be the same ordering logic as in Semantic Versioning.
-			Iterable(String).gt(ps.getVersion.split('.'), "0.9.2".split('.')) 
+			Iterable(String).gt(ps.getVersion.split('.'), "0.9.2".split('.')) mustBe false
 		}
 		"generate KBs given service description in JSON" in {
 			val kbs = PelletServer(SD_JSON).getKBs
@@ -37,7 +38,9 @@ class FactoryTest extends SpecificationWithJUnit {
 		"offer parameterless services on a KB" in {
 			val kb = PelletServer(SD_JSON).getKBs()(0);
 			val realize = kb.realize asRdfXml;
+			// realize must \( "rdf:Description" )
 			val nsService = kb.nsService asJson;
+			('owl ! str)(nsService) mustEqual "http://www.w3.org/2002/07/owl#" 
 			(kb.consistency asBoolean) must_== true;
 			val kbDiscovery = kb.kbDiscovery asRdfXml;
 			(kb.explainInconsistent asRdfXml) must throwA[StatusCode] /* like {
@@ -48,6 +51,7 @@ class FactoryTest extends SpecificationWithJUnit {
 			val kb = PelletServer(SD_JSON).getKBs()(2);
 			val query = kb.query("SELECT DISTINCT ?c WHERE {[] a ?c}") asSparqlXml;
 			val search = kb.search("dog") asJson;
+			list(search).size must notBe(0)
 		}
 		"deserialize SPARQL results" in {
 			val kb = PelletServer(SD_JSON).getKBs()(1)

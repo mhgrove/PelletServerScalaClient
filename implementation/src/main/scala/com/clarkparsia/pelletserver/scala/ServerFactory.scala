@@ -2,15 +2,15 @@ package com.clarkparsia.pelletserver.scala
 
 import java.net.URL
 import java.io.InputStreamReader
-//import net.liftweb.json.JsonParser.parse
 import dispatch.json.JsValue
 import dispatch.:/
 import dispatch.Http
 import dispatch.Http.str2req
 import dispatch.json.JsHttp.Request2JsonRequest
-//import net.liftweb.json.{Formats, DateFormat}
-import com.clarkparsia.pelletserver.scala.api.KnowledgeBase
+import com.clarkparsia.pelletserver.scala.api.{KnowledgeBase, SDProvenance}
 import com.clarkparsia.pelletserver.scala.api.json.JServiceDescription
+import scala.math.Ordering.{Iterable, String}
+import org.apache.commons.logging.LogFactory
 
 /**
  * Instances of PelletServer are created from a service description document in JSON,
@@ -20,6 +20,8 @@ import com.clarkparsia.pelletserver.scala.api.json.JServiceDescription
  * 
  */
 class PelletServer(serviceDescription: URL) {
+	
+	lazy private val log = LogFactory.getLog(this.getClass.getName)
 
 	private val json = if ("file".equalsIgnoreCase(serviceDescription.getProtocol)) {
 		JsValue.fromStream(serviceDescription.openStream)
@@ -32,9 +34,19 @@ class PelletServer(serviceDescription: URL) {
 		Http(serviceDescription.toString <:< Map("Accept" -> "text/json") ># { identity })
 	}
 	
-	// to extract the JSON object into our own case classes.
-	//private val sd = json.extract[JServiceDescription]
+	// extract the JSON object into our own case classes.
 	private val sd = CustomExtractor.extractServiceDescription(json)
+	
+	// check version against that used to generate the source
+	private val versionComparison = Iterable(String).compare(
+					sd.`server-information`.`server-version`.split('.'),
+					SDProvenance.SD_VERSION.split('.'))
+	if (versionComparison != 0) {
+		log.warn("PelletServer service description version %s than expected.  Got version %s, expected %s.".format(
+					if (versionComparison < 0) "older" else "newer",
+					sd.`server-information`.`server-version`,
+					SDProvenance.SD_VERSION))
+	}
 	
 	/**
 	 * Returns the list of knowledge bases available from the remote Pellet Server.
