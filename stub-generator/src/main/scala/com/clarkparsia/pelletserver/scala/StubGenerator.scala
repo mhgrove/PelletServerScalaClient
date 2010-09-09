@@ -119,7 +119,7 @@ object StubGenerator {
 		}
 		val sourceFile = new File(outputDirectory, KB_SCALA)
 		val writer = new FileWriter(sourceFile)
-		val template = Source.fromURL(getClass.getClassLoader.getResource("templates/KnowledgeBase"))
+		val template = Source.fromURL(getClass.getClassLoader.getResource("templates/KnowledgeBase.scala"))
 		for (line <- template) {
 			writer.write(line)
 		}
@@ -177,7 +177,7 @@ object SDProvenance {
 		}
 		val sourceFile = new File(outputDirectory, EXTRACTION_SCALA)
 		val writer = new FileWriter(sourceFile)
-		val template = Source.fromURL(getClass.getClassLoader.getResource("templates/Extraction"))
+		val template = Source.fromURL(getClass.getClassLoader.getResource("templates/Extraction.scala"))
 		for (line <- template) {
 			writer.write(line)
 		}
