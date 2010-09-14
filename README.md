@@ -21,18 +21,16 @@ instances.
 Documentation
 -------------
 
-Maven generated documentation, including ScalaDocs are available at
-http://clarkparsia.github.com/PelletServerScalaClient/.  The
-PelletServer Scala API client library is currently split into three
-modules:
+[Maven generated
+documentation](http://clarkparsia.github.com/PelletServerScalaClient/)
+including ScalaDocs for each module are available online.  The PelletServer
+Scala API client library is currently split into three modules:
 
 1.  Stub generator.  Used when (re)building from source if the
     PelletServer API changes.
 
 2.  Core.  Implements all the declared PelletServer knowledge base
     methods, and can parse all the result formats apart from RDF/XML.
-    See ScalaDocs at
-    http://clarkparsia.github.com/PelletServerScalaClient/scala-ps-api/scaladocs/index.html
 
 3.  RDF/XML.  Additional module to parse RDF/XML results using the
     Jena libraries.
@@ -40,7 +38,9 @@ modules:
 The core methods on a knowledge base are declared in the
 com.clarkparsia.pelletserver.scala.api.KnowledgeBase class with each
 method declaring a set of marker traits to determine how the results
-can be parsed and processed.  See the "Choices" section below for details.
+can be parsed and processed.  See the
+[ScalaDocs](http://clarkparsia.github.com/PelletServerScalaClient/scala-ps-api/scaladocs/index.html)
+for the core module and the "Choices" section below for more details.
 
 Example Scala usage
 -------------------
@@ -77,7 +77,7 @@ Into the PSExample.scala, paste the following:
 
     class PSProject(info: ProjectInfo) extends DefaultProject(info) {
       val git = "C&P git Maven repository" at "http://clarkparsia.github.com/PelletServerScalaClient/maven2"
-      val psScalaApi = "com.clarkparsia" % "scala-ps-api" % "0.1-RC2-SNAPSHOT"
+      val psScalaApi = "com.clarkparsia" % "scala-ps-api" % "0.1"
     }
 
 and then run `sbt update` to download the required jars.
