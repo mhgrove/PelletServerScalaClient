@@ -4,11 +4,11 @@
   <parent>
     <artifactId>scala-ps-parent</artifactId>
     <groupId>com.clarkparsia</groupId>
-    <version>0.1-RC2-SNAPSHOT</version>
+    <version>0.1</version>
   </parent>
   <groupId>com.clarkparsia</groupId>
   <artifactId>scala-ps-rdf</artifactId>
-  <version>0.1-RC2-SNAPSHOT</version>
+  <version>0.1</version>
   <name>PelletServer Scala API for RDF/XML</name>
   <description>Implements RDF/XML parser using Jena</description>
   <inceptionYear>2010</inceptionYear>
@@ -89,7 +89,7 @@
     <dependency>
       <groupId>com.clarkparsia</groupId>
       <artifactId>scala-ps-api</artifactId>
-      <version>0.1-RC2-SNAPSHOT</version>
+      <version>0.1</version>
     </dependency>
     <dependency>
       <groupId>com.hp.hpl.jena</groupId>
